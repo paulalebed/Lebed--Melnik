@@ -5,11 +5,12 @@ export default class ListaPeliculas {
   }
 
   agregar(pelicula) {
-    let peliculaEnCartelera = this.peliculas.some(m => m.titulo == pelicula.titulo);
+    let peliculaEnCartelera = this.peliculas.some(m => m.nombre == pelicula.nombre);
     if (!peliculaEnCartelera) {
       this.peliculas.push(pelicula);
+      throw new Error(`Se agregó ${pelicula.nombre} a la lista de Nft.`);
     } else {
-      throw new Error(`No se pudo agregar. ${pelicula.titulo} ya se encuentra en cartelera.`);
+      throw new Error(`No se pudo agregar. El nft ${pelicula.nombre} ya existe.`);
     }
   }
 
