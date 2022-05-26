@@ -1,7 +1,7 @@
 @use "@material/theme" with (
-  $primary: #00bcd4,
-  $secondary: #f44336,
-  $background: #c7c7c7,
+  $primary: #c20000,
+  $secondary: #131111,
+  $background: #e8a596,
 );
 @use '@material/button/mdc-button';
 @use '@material/button';
@@ -11,7 +11,6 @@
 @use "@material/tab-scroller/mdc-tab-scroller";
 @use "@material/tab-indicator/mdc-tab-indicator";
 @use "@material/tab/mdc-tab";
-@use "@material/icon-button";
 @use "@material/top-app-bar/mdc-top-app-bar";
 @use "@material/floating-label/mdc-floating-label";
 @use "@material/line-ripple/mdc-line-ripple";
@@ -21,28 +20,64 @@
 @use "@material/list/mdc-list";
 @use "@material/menu-surface/mdc-menu-surface";
 @use "@material/menu/mdc-menu";
-@use "@material/select/styles";
+@use "@material/select/styles" as b-style;
+@use "@material/icon-button";
 @use "@material/snackbar/mdc-snackbar";
+@use "@material/fab";
+@use "@material/button/styles" as a-syle;
+@use "@material/dialog";
 
 @include card.core-styles;
 @include textfield.core-styles;
+@include icon-button.core-styles;
+@include fab.core-styles;
+@include dialog.core-styles;
 
 html {
   scroll-behavior: smooth;
 }
 
+.demo-width-class {
+  width: 400px;
+}
+
 body {
-  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0px auto;
+  font-family: Arial, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e8a596;
 }
 
 .app-bar {
   position: absolute;
 }
 
-.mdc-top-app-bar {
+.content {
+  padding-bottom: 20rem;
+  text-align: center;
+}
+
+/*.mdc-top-app-bar {
   z-index: 7;
   @include icon-button.core-styles;
+}*/
+
+.mdc-top-app-bar {
+  transition: box-shadow 200ms linear;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.mdc-top-app-bar__title{
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+}
+
+.mdc-tab__icon .mdc-tab__text-label {
+  color: white;
+  background-color: white;
 }
 
 section {
@@ -60,7 +95,14 @@ section {
 }
 
 .mdc-tab {
-    background-color: #67daff;
+    background-color: #e8a596;
+}
+
+#btnAgregar {
+  margin: auto;
+  color: white;
+  background-color: #f11a1a;
+  width: 250px;
 }
 
 .mdc-tab__content .mdc-tab__text-label {
@@ -76,5 +118,18 @@ section {
 }
 
 .mdc-snackbar__actions .mdc-button__label {
-  color: #67daff;
+  color: #c10f0f;
 }
+
+.modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+

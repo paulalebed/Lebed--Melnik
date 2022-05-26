@@ -47,33 +47,21 @@
         </div>
       </div>
     </div>
-
-  <!--BOTON AGREGAR NFT
-  <div class="mdc-top-app-bar__row">
-    <button class="mdc-button mdc-button--raised mdc-button--leading" id="btnAgregar">
-      <span class="mdc-button__ripple"></span>
-      <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
-      <span class="mdc-button__label">Agregar NFT</span>
-    </button>
-  </div>-->
 </header>
 
   <main class="mdc-top-app-bar--fixed-adjust">
-    <!--<section class="content">-->
       <section>
-        <div class="modalContainer" id="nuevoGasto">
+        <div class="modalContainer" id="nuevoNft">
           <div class="modal-content">
-            <span class="close" id="cerrarGasto">
+            <span class="close" id="cerrarNft">
             </span>
             <br>
-            <h2 id="tituloAgregarGasto">Agregar NFT</h2>
-            <span class="producto">
-              <div class="mdc-contenido-producto">
+            <span class="Nft">
+              <div class="mdc-contenido-Nft">
                 <table style="border-collapse: separate; border-spacing: 20px 10px; border-top: 0px;">
                   <tbody>
-  
                     <div>
-  
+                      <h2 id="tituloAgregarNFT">Agregar NFT</h2>
                       <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon"
                         id="txtNombre">
                         <span class="mdc-notched-outline">
@@ -119,7 +107,7 @@
                       
                       <br>
                       <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon"
-                      id="txtMonto">
+                      id="txtCreador">
                       <span class="mdc-notched-outline">
                         <span class="mdc-notched-outline__leading"></span>
                         <span class="mdc-notched-outline__notch">
@@ -129,7 +117,7 @@
                       </span>
                       <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading"
                         role="button"></i>
-                      <input type="number" class="mdc-text-field__input" aria-labelledby="monto">
+                      <input type="number" class="mdc-text-field__input" aria-labelledby="creador">
                     </label>
                     <br>
               
@@ -160,17 +148,17 @@
 
                   <div class="mdc-select__menu demo-width-class mdc-menu mdc-menu-surface">
                     <ul class="mdc-list">
-                      <li class="mdc-list-item" data-value="efectivo">
+                      <li class="mdc-list-item" data-value="Phantom">
                         <span class="mdc-list-item__ripple"></span>
-                        <span class="mdc-list-item__text">Efectivo</span>
+                        <span class="mdc-list-item__text">Phantom</span>
                       </li>
-                      <li class="mdc-list-item" data-value="tarjetaDeb" aria-selected="true">
+                      <li class="mdc-list-item" data-value="Metamask" aria-selected="true">
                         <span class="mdc-list-item__ripple"></span>
-                        <span class="mdc-list-item__text">Tarjeta de débito</span>
+                        <span class="mdc-list-item__text">Metamask</span>
                       </li>
-                      <li class="mdc-list-item" data-value="tarjetaCred" aria-selected="true">
+                      <li class="mdc-list-item" data-value="Coinbase" aria-selected="true">
                         <span class="mdc-list-item__ripple"></span>
-                        <span class="mdc-list-item__text">Tarjeta de crédito</span>
+                        <span class="mdc-list-item__text">Coinbase</span>
                       </li>
                     </ul>
                   </div>
@@ -178,7 +166,6 @@
                 </div>
 
                 <br>
-
                 <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon"
                   id="txtDescripcion">
                   <span class="mdc-notched-outline">
@@ -195,7 +182,7 @@
 
                 <br>
     </section>
-    <section class="content sample-content--hidden">
+    <!--<section class="content sample-content--hidden">
       <h1>Próximamente</h1>
       <label class="mdc-text-field mdc-text-field--outlined" id="title">
         <span class="mdc-notched-outline">
@@ -267,7 +254,7 @@
           </ul>
         </div>
       </div>
-      </div>
+      </div>-->
       <div class="button">
         <button class="mdc-button mdc-button--raised" id="addButton">
           <span class="mdc-button__label">AGREGAR</span>

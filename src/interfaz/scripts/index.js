@@ -21,8 +21,8 @@ const btnAgregarPersona= document.getElementById("btnAgregarPersona");
 //const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 //const topAppBar = new MDCTopAppBar(topAppBarElement);
 
+
 //agregar Nft
-// agregar gasto
 const ventanaNft = document.getElementById("nuevoNft");
 const txtNombreNft = new MDCTextField(document.getElementById("txtNombreNft"));
 const txtMontoNft = new MDCTextField(document.getElementById("txtMontoNft"));
@@ -34,7 +34,7 @@ const confirmarNft = document.getElementById("confirmarNft");
 const btnDialogDescartarNft = document.getElementById("btnDialogDescartarNft");
 const btnDialogAgregarNft = document.getElementById("btnDialogAgregarNft");
 
-// agregar persona
+// agregar Uusuario
 const ventanaPersona = document.getElementById("nuevaPersona");
 const txtNombrePersona = new MDCTextField(document.getElementById("txtNombreP"));
 const WalletPersona = new MDCTextField(document.getElementById("txtWallet"));
