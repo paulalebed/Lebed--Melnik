@@ -1,20 +1,20 @@
-export default class ListaPeliculas {
+export default class ListaNft {
 
   constructor() {
-    this.peliculas = [];
+    this.nft = [];
   }
 
-  agregar(pelicula) {
-    let peliculaEnCartelera = this.peliculas.some(m => m.nombre == pelicula.nombre);
-    if (!peliculaEnCartelera) {
-      this.peliculas.push(pelicula);
-      throw new Error(`Se agregó ${pelicula.nombre} a la lista de Nft.`);
+  agregar(nft) {
+    let nftEnPagina = this.nfts.some(m => m.nombre == nft.nombre);
+    if (!nftEnPagina) {
+      this.nfts.push(nft);
+      throw new Error(`Se agregó ${nft.nombre} a la lista de Nft.`);
     } else {
-      throw new Error(`No se pudo agregar. El nft ${pelicula.nombre} ya existe.`);
+      throw new Error(`No se pudo agregar. El nft ${nft.nombre} ya existe.`);
     }
   }
 
   getPeliculas() {
-    return this.peliculas;
+    return this.nfts;
   }
 }

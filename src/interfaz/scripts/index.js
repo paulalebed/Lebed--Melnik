@@ -4,10 +4,10 @@ import { MDCTabBar } from '@material/tab-bar';
 import { MDCTextField } from '@material/textfield';
 import { MDCSelect } from '@material/select';
 import {MDCSnackbar} from '@material/snackbar';
-import ListaPeliculas from '../../dominio/lista-peliculas.mjs';
-import Pelicula from '../../dominio/pelicula.mjs';
+import ListaNfts from '../../dominio/lista-nfts.mjs';
+import Nft from '../../dominio/nft.mjs';
 
-const listaPeliculas = new ListaPeliculas();
+const listaNfts = new ListaNfts();
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = new MDCTopAppBar(topAppBarElement);
@@ -40,15 +40,15 @@ addButton.listen('click', () => {
   let image = textfieldImage.value; 
 
   try {
-    let newPelicula = new Pelicula(title, genre, year, description, category);
-    listaPeliculas.agregar(newPelicula);
+    let newNft = new Nft(title, genre, year, description, category);
+    listaNfts.agregar(newNft);
   } catch (error) {
     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
     snackbar.labelText = error.message;
     snackbar.open();
   } finally {
-    let peliculas = listaPeliculas.getPeliculas();
-    console.log(peliculas);
+    let nfts = listaNfts.getNfts();
+    console.log(nfts);
     let form = document.getElementById('form'); 
     form.reset(); 
 
@@ -57,18 +57,18 @@ addButton.listen('click', () => {
 
 const showButton = new MDCRipple(document.getElementById('showButton'));
 addButton.listen('click', () => {
-    let peliculas = listaPeliculas.getPeliculas();
-    console.log(peliculas);
+    let nfts = listaNfts.getNfts();
+    console.log(nfts);
       let lista = document.getElementById("idLista");
-      if(peliculas.length == 1){
-      document.getElementById("lista").innerHTML="Mis nft: "+peliculas[0].value; 
+      if(nfts.length == 1){
+      document.getElementById("lista").innerHTML="Mis nft: "+nfts[0].value; 
       lista.innerHTML="";
-      } else if (peliculas.length > 1){
+      } else if (nfts.length > 1){
       document.getElementById("lista").innerHTML="Mis nft:"; 
       lista.innerHTML="";
-      for (i=0;i<peliculas.length;i++) {
+      for (i=0;i<nfts.length;i++) {
       let itemList = document.createElement("li");
-      let nodoT = document.createTextNode(peliculas[i].value); 
+      let nodoT = document.createTextNode(nfts[i].value); 
       itemList.appendChild(nodoT); 
       lista.appendChild(itemList);
       }
