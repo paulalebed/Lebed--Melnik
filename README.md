@@ -9,6 +9,8 @@
 | Integrantes    | Paula Lebed y Tamara Melnik                            |
 | Link           | https://github.com/paulalebed/oblig2.git               |
 
+RELLENAR (agregar indice)
+
 ## CONSTRUCCIÓN
 
 ### Aspectos generales:
@@ -151,8 +153,114 @@ Para este prototipo decidimos realizar la implementacion de las funcionalidades 
 Para llevar a cabo el proyecto, nuestro programa cuenta con dependencias de librerías externas. Esto tanto en **interfaz** como en **dominio**. Las respectivas librerías pueden ser halladas dentro de su **package.json**.
 
 <u>En interfaz:</u>
-
-<u>En dominio:</u>
+RELLENAR (REVISAR TILDES TODO EL DOC)
  
+<u>En dominio:</u>
+* jest: v. ^26.6.3
+* eslint: v. ^8.2.0
+* @babel/preset-env: v. ^7.14.5
+ 
+ ## INTERFAZ DE USUARIO
+ 
+ ### Usabilidad:
+Para llevar a cabo el desarrollo la interfaz y su disposición, hicimos uso de los principios de usabilidad presentados en clase. Optamos por basarnos en las **Heurísticas de Nielsen**. A continuación, describiremos cómo es que la pagina web de CultoCafe cumple con varias de estas.
+
+* **Estética y diseño minimalista:** Nuestra intención es crear un diseño que resulte atractivo para el usuario desde una prespectiva minimalista. Esto se debe a que creemos que es más placentero navegar por una web que cuente con un enfoque minimal, haciendo uso de botones y texto solo donde y cuando sea necesario, otorgandole un uso plenamente informativo. Creemos en el concepto de "menos es más", por lo que evitamos en todo momemnto invadir y saturar al usuario con enormes campos de texto de información, imagenes y más.
+    A modo de conclusion, nuestro diseño de interfaz, el cual cuenta con RELLENAR pestañas principales y los respectivos campos dentro de ellas, fue creado con la intención de facilitar el entendimiento del usuario, trayendo por consecuencia una preferencia de la página si se la comparado con otras con texto excesivo, pesado y robusto.  
+        
+* **Consistencia y estándares:** Tal y como lo indica la heurística es necesario que los programas mantengan un determinado nivel de consistencia dentro de lo que respecta a la interfaz, evitando de esta manera los casos en los que cierto elemento significa una cosa, luego pasa a significar otra distinta y así repetidas veces. "Consistencia y estandares" refiere a como se ve explicitamente el programa, acompañando dicho resultado de cuanto esfuerzo y empeño le fue a otorgado al diseño. Cuanto más consiste sea, sera más fácil para el usuario trabajar con el intuitivamente, sabiendo así el proposito de cada campo a rellenar, botón y/o lista. Esto se puede lograr de varias maneras, ya sea señalizando los íconos con texto que resulten informativos o agregando cabeceras que indiquen qué tipo de información se podrá encontrar en cada una de las secciones o columnas (por ejemplo en el caso de la lista de Mis Nft).
+    Otro caso que podría ejemplificar este aspecto es cuando no se ha agregado ningún NFT. Creemos que es más conveniente que el programa muestre "No has agregado ningúna pieza de Nft", dandole así a entender al usuario que allí ira la lista de Nfts propios, pero que aún no ha ingresado uno, en lugar de que se presente una cabecera completamente limpia y ausente datos.
+
+* **Visibilidad del estado del sistema:** Esta heuristica es la que nos parecio más relevante a la hora de pensar en la usabilidad de nuestro programa y es la primera heurística definida por Nielsen. En terminos generales, refiere a que el usuario tenga un entendimiento de donde esta parado en todo momento, logrando saber que función esta realizando y en que parte del proceso esta. Un ejemplo practico sería cuando la pagina permite al usuario agregar una pieza de Nft. Aquí la pestaña no ofrece unicamente los campos a rellenar, sino que también da detalles como "Nombre", "Monto", "Wallet", indicando como aclaración qué tipo de información debe ir dentro de cada uno. Además, si se ingresa información incompatible a dichos campos (que no coincide con el formato de entrada esperado), se muesta un <a href="https://material.io/components/snackbars">snackbar</a>, indicando la falla.
+
+### Estándar de accesibilidad WCAG:
+
+A modo de crear un programa accesible para la mayor cantidad de público posible, decidimos seguir con los estándares de accesibilidad propuestos en el documento WCAG. En este son especificadas distintas recomendaciones en lo que respecta a la accesibilidad para una interfaz web. La idea consiste en no limitar o perjudicar a individuos con cierta discapacidad, sea del tipo que sea (dislexia, de lectura, vista, etc). Presentamos ciertos ejemplos de estos estandares, aunque existen más:
+   ** Distinguible**
+   ** Tiempo suficiente para rellenar los campos** 
+   **Alternativas de texto**
+   **Adaptable**
+
+### Especificación de estilo:
+
+Para especificar el estilo de la web, optamos por hacer uso de lo siguiente:
+
+**1.** Tipo de letra: RELLENAR
+
+**2.** Colores primarios: RELLENAR
+
+**3.** Colores secundarios: RELLENAR
+
+**4.** Iconos:  RELLENAR
+
+### A nivel de caracteristicas generales:
+Nuestra interfaz cuenta con RELLENAR secciones principales: **RELLENAR**, **RELLENAR** y **RELLENAR**. Además, esta tiene un diseño web adaptable (responsive).
+
+Con respecto a la interfaz, esta hace uso de <a href="https://material.io/components?platform=web"> Material Design Web Components</a> para crear su estética. Además, para lograr navegar entre secciones hacemos uso de una <a href="https://material.io/components/app-bars-top">top app bar</a>. Esta da la oportunidad de que solo una sección este activa en un momento determinado. Por otro lado, creamos varios <a href="https://material.io/components/buttons#usage">botónes</a>, como por ejemplo de "Agregar" o de "Ver mis Nft". Estos pueden ser encontrados sobre la barra superior de la pagina, otorgandole a los usuarios un fácil acceso a éstos cada vez que este decida agregar un nuevo gasto, de forma simple y dinámica. Cabe destacar que cada seccion cuenta con sus características y funciones particulares: 
+
+* **RELLENAR (SECCION)** RELLENAR (mirar readme)
+
+* **RELLENAR (SECCION)** RELLENAR (mirar readme)
+
+* **RELLENAR (SECCION)** RELLENAR (mirar readme)
+
+## CODIFICACIÓN
+### IDE: Visual Studio Code
+Toda la codificación del proyecto a nivel grupal fue realizada en el IDE Visual Studio Code. Ademas, utilizamos el plugin Eslint en el dominio. 
+
+### Estándares de codificación 
+Al no trabajar de forma individual, nos parecio que era importante mantener a nivel de equipo un estándar de codificación. Esto no solo ayudaria a facilitar la lectura y lo que es el entendimiento del código, sino que también nos convendria por el lenguaje que estábamos utilizando (JavaScript). Js es un lenguaje no tipado, lo que quiere decir que a nosotras, a nivel de desarrolladoras, por más que nos facilitaría y agilizaría en muchos aspectos, en muchos otros nos podría causar problemas y trancas a medida que el código se extiende. Es por esto que nos fue clave mantener un estándar constante, claro y conciso. 
+
+Para llevar a cabo la codificación utilizamos: **JavaScript**, **HTML** y **CSS**, siguiendo los estándares establecidos por Google. Algunos de estos son los siguientes:
+
+**1.** Todas las estructuras cuentan un principio y fin
+
+**2.** Los id's de cada elemento se presentan de manera única y no son reutilizables
+
+**3.** Presencia de indentacion y anidamiento apropiados
+
+**4.** Los nombres de las variables a nivel total están en minúscula, con excepcion especial si estas contienen  más de una palabra. Este formato lleva el nombre de camelCase. Por ejemplo: let unEjemplo = "hola" 
+
+**5.** Los comentarios tienen un uso limitado y  aportan de manera explicativa, en especial para las partes del codigo que no resultan fáciles de entender a simple vista
+
+**6.** Las sentencias estan todas agrupadas 
+
+**7.** Tanto la estructura de directorio como los nombres de archivo se encuentran bien estructurados
+
+**8.** Todos los nombres ya sea de Id's, variables y demás son nemotécnicos, ayudando a que el código sea más entendible.
+
+### Buenas prácticas para la Programación Orientada a Objetos: 
+
+Nos parecio importante darle en nuestro obligatorio atención especial a la separación de lógica e interfaz, siguiendo las buenas prácticas de la OOP (Programación Orientada a Objetos). Es asī que en interfaz se puede encontrar todo lo que respecta a la lógica utilizada en la interfaz que puede ser vista por el usuario, el archivo .html y el archivo .css. Por otro lado, dentro del dominio aparecen las principales clases que utilizamos acompańadas de sus archivos de prueba. Respectivas pruebas fueron realizadas con Jest. 
+
+Cabe destacar que cada carpeta contiene su propio package.json.
+
+## TEST UNITARIOS
+
+Dentro de nuestro proyecto implementamos tests para cubrir cada elemento de la clase. El beneficio de esto fue probar que su comportamiento coincida con el esperado. A traves de estos logramos obtener la cobertura del dominio.
+
+<img src="img/PruebasJest.png" alt="Pruebas Unitarias - Jest" /> //RELLENAR CON LO NUESTRO
+
+## TEST DE SISTEMA
+
+### Sobre la versión congelada 
+Debido a el sistema operativo del que disponiamos cada una de las integrantes del grupo, el test del sistema fue realizado en Windows y Mac. Además se testeo tanto en Edge como en Chrome. Por suerte, todos los test obtuvieron el resultado esperado. //RELLENAR (confirmar en verdad)
+
+### Aplicación de la técnica partición equivalente a traves de los casos de prueba
+
+En este caso realizamos los siguientes casos de pruebas de la funcionalidad **"Agregar Nft"**
+
+| Entrada / Variable | Clases Validas                          | Clases Invalidas                       | 
+|--------------------|-----------------------------------------|----------------------------------------|
+| Nombre             |Caracteres solamente alfabeticos(1)      | Caracteres solamente numéricos(2)      |
+|                    |                                         | Caracteres alfanumericos(3)            |   
+| Monto              |Caracteres numéricos positivos o cero(4) | Caracteres numéricos negativos(5)      |
+|                    |                                         | Caracteres alfanuméricos(6)            |     
+| Fecha              |Fechas anteriores al dia de hoy(7)       | Fechas futuras(8)                      |
+
+<img src="img/pruebasClaseEquivalencia.png" alt="pruebasClasesEquivalencia" /> //RELLENAR?
+
+
+
 
 
