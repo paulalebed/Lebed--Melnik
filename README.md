@@ -244,7 +244,7 @@ Dentro de nuestro proyecto implementamos tests para cubrir cada elemento de la c
 ## TEST DE SISTEMA
 
 ### Sobre la versión congelada 
-Debido a el sistema operativo del que disponiamos cada una de las integrantes del grupo, el test del sistema fue realizado en Windows y Mac. Además se testeo tanto en Edge como en Chrome. Por suerte, todos los test obtuvieron el resultado esperado. //RELLENAR (confirmar en verdad)
+Debido a el sistema operativo del que disponiamos cada una de las integrantes del grupo, el test del sistema fue realizado en Windows y Mac. Además se testeo tanto en Edge como en Chrome. Por suerte, todos los test obtuvieron el resultado esperado. //RELLENAR (confirmar si todos los test tuvieron el resultado esperado en verdad)
 
 ### Aplicación de la técnica partición equivalente a traves de los casos de prueba
 
@@ -256,9 +256,108 @@ En este caso realizamos los siguientes casos de pruebas de la funcionalidad **"A
 |                    |                                         | Caracteres alfanumericos(3)            |   
 | Monto              |Caracteres numéricos positivos o cero(4) | Caracteres numéricos negativos(5)      |
 |                    |                                         | Caracteres alfanuméricos(6)            |     
-| Fecha              |Fechas anteriores al dia de hoy(7)       | Fechas futuras(8)                      |
+| Descripción        |Fechas anteriores al dia de hoy(7)       | RELLENAR                               |
+| Imagen             |Fechas anteriores al dia de hoy(7)       | RELLENAR                               | 
+| Wallet             |Fechas anteriores al dia de hoy(7)       |  RELLENAR                              |
+| Categoria          |Fechas anteriores al dia de hoy(7)       |  RELLENAR                              |
 
 <img src="img/pruebasClaseEquivalencia.png" alt="pruebasClasesEquivalencia" /> //RELLENAR?
+
+### Pruebas Exploratorias
+
+### Sesión numero 1:
+
+* **Aplicación bajo prueba:** CultoCafe 
+* **Duración:** 15 min (Corta)
+* **Entorno:** Google Chrome Versión 102.0.5005.61 
+* **Objetivo:** Chequear el funcionamiento correcto de agregar un gasto
+
+* **Notas de las pruebas:**
+
+**1)** No se fija cual es el formato del monto. Por ejemplo se puede agregar "holamundo" y el sistema lo permitiría. Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar
+
+**2)** La interfaz no prohibe agregar montos iguales a 0. Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
+
+**3)** Si el usuario no relleno el campo de nombre, la interfaz permite agregar la pieza de Nft. Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
+
+**4)**El programa agrega el valor de monto literal. Por ejemplo si el usuario ingresa "00273" o "000", se agregaría la pieza de Nft con el respectivo montos en lugar de "273" o "0". Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar. (RELLENAR . me refiero a hacerlo) 
+
+**6)** Si se ingresa dentro del campo de texto un String muy largo o dentro del nombre una cifra extensa, aparece de manera cortado en la lista de Nfts agregados. 
+
+**7)** Sería conveniente que los campos de texto tengan de fondo un color que sea sutil, para poder distinguirlos facilmente de la ventana.
+
+* **Estructura de división:** 
+
+RELLENAR TODO 
+<u>Misión:</u> 
+<u>Oportunidad:</u> 
+
+<u>Investigación y reporte de incidentes:</u> 
+<u>Diseño y ejecución:</u> 
+<u>Configuración de las pruebas:</u> 
+
+### Sesión #2:
+
+* **Aplicación bajo prueba:** CultoCafe
+* **Duración:** 10 min (Corta)
+* **Entorno:**  Google Chrome Versión 102.0.5005.61 
+* **Objetivo:**  Chequear el funcionamiento correcto de ver mis Nft
+
+* **Notas de las pruebas:**
+
+RELLENAR con mas
+**1)** Cuando algun tipo de informacion muy larga, no se permite ver de forma completa y lo corta. Debería acomodarse de forma que aparezca completa, o, en su defecto con puntos suspensivos ("...").
+
+* **Estructura de división:** 
+
+RELLENAR TODO 
+<u>Misión:</u> 
+<u>Oportunidad:</u> 
+
+<u>Investigación y reporte de incidentes:</u> 
+<u>Diseño y ejecución:</u> 
+<u>Configuración de las pruebas:</u> 
+
+## REPORTE DE ISSUES
+A la hora de mejorar la calidad de nuestro proyecto reportamos issues. Estos representan bugs, improvements y missing features. Pueden ser visualizados en el tab de issues de GitHub y los dejamos abiertos ya sea para correcciones o pislbes mejoras que pueden llegar a hacerse en el futuro. Además hubo otros que issues que encontramos antes de realizar el **code freeze**. Por suerte estos los llegamos a solucionar y por lo tanto cerrar en GitHub. (RELLENAR. en verdad hacer o chequear que este ahi)
+
+Los issues abiertos que reportamos fueron:
+
+RELLENAR CON MUCHOS
+* <a href="RELLENAR link repo a ese issue">RELLENAR DESCRIPCION </a>
+
+Los issues cerrados reportados fueron los siguientes:
+
+* <a href="RELLENAR link repo a ese issue">RELLENAR DESCRIPCION</a>
+
+### Evaluación global de calidad
+
+Utilizamos <a href="RELLENAR link eslint">Eslint</a> de Google para evaluar nuestro proyecto a nivel de buenas prácticas, rendimiento y accesibilidad. 
+
+## REFLEXIÓNES PERSONALES
+
+### Paula Lebed
+En esta instancia del obligatorio pude darme cuenta la relevancia de las herramientas adquiridas a lo largo del curso. Esto va desde el correcto 
+uso de GitHub, hasta las diferentes maneras que existen de testear y lograr detectar errores. Creo que junto a mi compañera hemos podido llegar a
+un excelente resultado. Esto se debe, en mi opinion, a el buen manejo que creo que tuvimos a lo largo de ambas entregas pero también gracias a saber implementar lo adquirido en clase.
+
+### Tamara Melnik
+Creo que la segunda parte del proyecto el trabajo fue más fluido y dinámico que en la primera. Esto debido talvez a que ya estabamos en algún punto familiarizadas con las metodologías y herramientas, que la primer parte necesitamos incorporar. Con esto me refiero a el manejo de Git, tambien el IDE Visual Studio Code. Pude ver las ventajas que ambos de estos proveen. Por otro lado, supimos dividir el trabajo de forma equitativa y bastante rápida junto a mi compañera Paula. Me quedo satisfecha con el trabajo realizado y agradecido con mis compañera por el esfuerzo grupal que le dimos.
+
+### Técnicas aplicadas y aprendizajes
+En esta parte del obligatorio logramos profundizar realmente en lo que es llevar a cabo un proyecto real. Nos gusto poder ver parte de lo que realizamos en la instancia del obligatorio anterior, tomando una funcionalidad del mismo. Para llevarlo a cabo tuvimos que retomar y adentrarnos en el aprendizaje recibido en la materia de programción 1, expandiendo nuestros conocimientos en lo que respecta a HTML, JavaScript y jcss.  Fue necesario el uso de frameworks para asi generar una pagina que sea funcional. 
+
+Además, aprendimos sobre otras herramientas nuevas como por ejemplo pruebas unitarias. Estas nos fueron de gran utlidad a la hora de detectar busgs en las instancias más tempranas de codificacion. También utilizamos otras tecnicas de pruebas: pruebas exploratorias y reporte de issues. Cabe destacar que seguimos desarrollando nuestro avance en GitHub, generando esta vez que formpe parte de las practicas habituales em el momento de codificar.
+
+## PRESENTACIÓNES ORALES INDIVIDUALES
+
+**Paula Lebed** presento el tema **especificacion de use cases**y se puede acceder a el PDF con la presentación en nuestro repo.
+ <a href="./Especificacion_use_cases.pdf">link</a>.
+**Tamara Melnik** presento el **pruebas unitarias** y se puede acceder a el PDF con la presentación en nuestro repo.
+ <a href="./RELLENAR(tamara).pdf">link</a>.
+
+</div>
+
 
 
 
