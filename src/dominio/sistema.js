@@ -1,22 +1,35 @@
 export default class Sistema {
+
+    /**
+     * Constructor de la clase
+     */
     constructor() {
         this.listaNft = [];
         this.listaUsuarios = [];
     }
 
     // METODOS
-
-    // agrega un NFT a listaNft
+    /**
+     * Método que agrega un Nft a la lista de Nfts
+     * @param {*} nft 
+     */
     agregarNft(nft) {
         this.listaNft.push(nft);
     }
 
-    // agrega una persona a listaPersonas
+    /**
+     * Método que agrega un usuario a la lista de usuarios
+     * @param {*} usuario 
+     */
     agregarUsuario(usuario) {
         this.listaUsuarios.push(usuario);
     }
 
-    // devuelve true si el nombre del Nft esta repetido
+    /**
+     * Método que devuelve si un Nft está repetido
+     * @param {*} nombreNft 
+     * @returns true si el nombre del Nft existe en la lista
+     */
     nftRepetido(nombreNft) {
         let ret = false;
         for (let elem of this.listaNft) {
