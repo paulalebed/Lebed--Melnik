@@ -42,6 +42,7 @@ addButton.listen('click', () => {
   try {
     let newNft = new Nft(title, genre, year, description, category);
     listaNfts.agregar(newNft);
+    console.log(nfts);
   } catch (error) {
     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
     snackbar.labelText = error.message;
@@ -55,8 +56,8 @@ addButton.listen('click', () => {
   }
 })
 
-const showButton = new MDCRipple(document.getElementById('showButton'));
-addButton.listen('click', () => {
+//const showButton = new MDCRipple(document.getElementById('showButton'));
+/*addButton.listen('click', () => {
     let nfts = listaNfts.getNfts();
     console.log(nfts);
       let lista = document.getElementById("idLista");
@@ -74,4 +75,11 @@ addButton.listen('click', () => {
       }
   
 }
-})
+})*/
+
+/*import {MDCRipple} from '@material/ripple';
+
+const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
+const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
+  return new MDCRipple(el);
+});*/
