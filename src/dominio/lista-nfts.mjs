@@ -5,7 +5,7 @@ export default class ListaNft {
   }
 
   agregar(nft) {
-    let nftEnPagina = this.nfts.some(m => m.nombre == nft.nombre);
+    let nftEnPagina = this.nft.some(m => m.nombre == nft.nombre);
     if (!nftEnPagina) {
       this.nft.push(nft);
       throw new Error(`Se agregó ${nft.nombre} a la lista de Nft.`);
@@ -15,6 +15,6 @@ export default class ListaNft {
   }
 
   getNfts() {
-    return this.nfts;
+    return this.nft;
   }
 }

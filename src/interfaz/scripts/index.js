@@ -40,9 +40,8 @@ addButton.listen('click', () => {
   let image = textfieldImage.value; 
 
   try {
-    let newNft = new Nft(title, genre, year, description, category);
+    let newNft = new Nft(title, genre, year, description, category,image);
     listaNfts.agregar(newNft);
-    console.log(nfts);
   } catch (error) {
     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
     snackbar.labelText = error.message;
