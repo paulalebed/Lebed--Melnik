@@ -368,7 +368,7 @@ Además, aprendimos sobre otras herramientas nuevas como por ejemplo pruebas uni
 **Paula Lebed** presento el tema **especificacion de use cases**y se puede acceder a el PDF con la presentación en nuestro repo.
  <a href="./Especificacion_use_cases.pdf">link</a>.
 **Tamara Melnik** presento el **pruebas unitarias** y se puede acceder a el PDF con la presentación en nuestro repo.
- <a href="./RELLENAR(tamara).pdf">link</a>.
+ <a href="./JEST.pdf">link</a>.
 
 </div>
 
