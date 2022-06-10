@@ -18,7 +18,7 @@ RELLENAR (agregar indice)
 Para lograr construir el programa hicimos uso de dos diferentes carpetas, las cuales contienen la información: dominio e interfaz. Por un lado, en dominio, se puede encontrar lo que es la  funcionalidad del programa: aquello que es necesario para correr la lógica del mismo. Las clases utilizadas fueron **Sistema**, **Usuario** y **Nft**. Además dentro del dominio tambien se pueden encontrar los archivos para probar el proyecto (Jest). Por otro lado, en interfaz, contamos con una carpeta que refiere a los estilos de nombre style.css y otra de scripts, llamada index.js.
 
 ### Funciones principales:
-####Implementación
+#### Implementación
 
 Para este prototipo decidimos realizar la implementacion de las funcionalidades de los siguientes casos de uso:
 
@@ -153,7 +153,21 @@ Para este prototipo decidimos realizar la implementacion de las funcionalidades 
 Para llevar a cabo el proyecto, nuestro programa cuenta con dependencias de librerías externas. Esto tanto en **interfaz** como en **dominio**. Las respectivas librerías pueden ser halladas dentro de su **package.json**.
 
 <u>En interfaz:</u>
-RELLENAR (REVISAR TILDES TODO EL DOC)
+* "@material/snackbar": "^12.0.0",
+* "material-components-web": "^11.0.0"
+* "@babel/core": "^7.13.16",
+* "@babel/preset-env": "^7.13.15",
+* "autoprefixer": "^10.2.5",
+* "babel-loader": "^8.2.2",
+* "css-loader": "^5.2.4",
+* "extract-loader": "^5.1.0",
+* "file-loader": "^6.2.0",
+* "postcss-loader": "^5.2.0",
+* "sass": "^1.32.11",
+* "sass-loader": "^11.0.1",
+* "webpack": "^5.36.0",
+* "webpack-cli": "^4.6.0",
+* "webpack-dev-server": "^3.11.2"
  
 <u>En dominio:</u>
 * jest: v. ^26.6.3
@@ -185,13 +199,13 @@ A modo de crear un programa accesible para la mayor cantidad de público posible
 
 Para especificar el estilo de la web, optamos por hacer uso de lo siguiente:
 
-**1.** Tipo de letra: RELLENAR
+**1.** Tipo de letra: Roboto
 
-**2.** Colores primarios: RELLENAR
+**2.** Colores primarios: #d40000
 
-**3.** Colores secundarios: RELLENAR
+**3.** Colores secundarios: #f44336
 
-**4.** Iconos:  RELLENAR
+**4.** Iconos:  material icons
 
 ### A nivel de caracteristicas generales:
 Nuestra interfaz cuenta con RELLENAR secciones principales: **RELLENAR**, **RELLENAR** y **RELLENAR**. Además, esta tiene un diseño web adaptable (responsive).
