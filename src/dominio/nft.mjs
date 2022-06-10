@@ -1,8 +1,20 @@
 const MIN_ANIO = 1888;
 const MAX_ANIO = 2021;
 
+/**
+ * Clase Nft encargada de guardar la información de los Nft del marketplace
+ */
 export default class Nft {
 
+  /**
+   * Constructor de la clase 
+   * @param {*} nombre 
+   * @param {*} wallet 
+   * @param {*} monto 
+   * @param {*} descripcion 
+   * @param {*} categoria 
+   * @param {*} imagen 
+   */
   constructor(nombre, wallet, monto, descripcion, categoria, imagen) {
     this.setNombre(nombre); 
     //this.genero = genero;
@@ -21,6 +33,10 @@ export default class Nft {
     }
   }*/
 
+  /**
+   * Método para setear o guardar la descripción de un Nft
+   * @param {*} descripcion String
+   */
   setDescripcion(descripcion) {
     if (descripcion.length > 0) {
       this.descripcion = descripcion;
@@ -29,6 +45,10 @@ export default class Nft {
     }
   }
 
+  /**
+   * Método para setear o guardar la categoría de un Nft. La misma es seleccionada de una picklist
+   * @param {*} categoria String
+   */
   setCategoria(categoria) {
     if (categoria.length > 0) {
       this.categoria = categoria;
@@ -38,6 +58,10 @@ export default class Nft {
   }
 
 
+  /**
+   * Método para setear o guardar el monto de un Nft
+   * @param {*} monto Integer
+   */
   setMonto(monto) {
     if (monto > 0) {
       this.monto = monto;
@@ -46,6 +70,10 @@ export default class Nft {
     }
   }
 
+  /**
+   * Método para setear o guardar el nombre de un Nft
+   * @param {*} nombre String
+   */
   setNombre(nombre) {
     if (nombre.length > 0) {
       this.nombre = nombre;
@@ -54,6 +82,11 @@ export default class Nft {
     }
   }
 
+
+  /**
+   * Método para setear o guardar la Wallet del usuario que sube el Nft
+   * @param {*} wallet String
+   */
   setWallet(wallet) {
     if (wallet.length > 0) {
       this.wallet = wallet;

@@ -1,3 +1,6 @@
+/**
+ * Clase Sistema encargada de manejar las listas de nfts del marketplace
+ */
 export default class Sistema {
 
     /**
@@ -5,7 +8,6 @@ export default class Sistema {
      */
     constructor() {
         this.listaNft = [];
-        this.listaUsuarios = [];
     }
 
     // METODOS
@@ -13,17 +15,27 @@ export default class Sistema {
      * Método que agrega un Nft a la lista de Nfts
      * @param {*} nft 
      */
-    agregarNft(nft) {
-        this.listaNft.push(nft);
-    }
+   // agregarNft(nft) {
+     //   this.listaNft.push(nft);
+    //}
+
+    agregar(nft) {
+        let nftEnPagina = this.listaNft.some(m => m.nombre == nft.nombre);
+        if (!nftEnPagina) {
+          this.listaNft.push(nft);
+          throw new Error(`Se agregó ${nft.nombre} a la lista de Nft.`);
+        } else {
+          throw new Error(`No se pudo agregar. El nft ${nft.nombre} ya existe.`);
+        }
+      }
 
     /**
-     * Método que agrega un usuario a la lista de usuarios
-     * @param {*} usuario 
+     * Método que devuleve una colección con todos los Nfts del sistema
+     * @returns 
      */
-    agregarUsuario(usuario) {
-        this.listaUsuarios.push(usuario);
-    }
+    getNfts() {
+        return this.listaNft;
+      }
 
     /**
      * Método que devuelve si un Nft está repetido

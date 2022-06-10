@@ -4,10 +4,10 @@ import { MDCTabBar } from '@material/tab-bar';
 import { MDCTextField } from '@material/textfield';
 import { MDCSelect } from '@material/select';
 import {MDCSnackbar} from '@material/snackbar';
-import ListaNfts from '../../dominio/lista-nfts.mjs';
 import Nft from '../../dominio/nft.mjs';
+import Sistema from '../../dominio/sistema.js';
 
-const listaNfts = new ListaNfts();
+const sistema = new Sistema(); 
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = new MDCTopAppBar(topAppBarElement);
@@ -41,13 +41,13 @@ addButton.listen('click', () => {
 
   try {
     let newNft = new Nft(title, genre, year, description, category,image);
-    listaNfts.agregar(newNft);
+    sistema.agregar(newNft);
   } catch (error) {
     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
     snackbar.labelText = error.message;
     snackbar.open();
   } finally {
-    let nfts = listaNfts.getNfts();
+    let nfts = sistema.getNfts();
     console.log(nfts);
     let form = document.getElementById('form'); 
     form.reset(); 
