@@ -10,10 +10,6 @@ export default class Sistema {
         this.listaNft = [];
     }
 
-    /*constructor(nft) {
-      this.listaNft.push(nft); 
-  }*/
-
     // METODOS
     /**
      * Método que agrega un Nft a la lista de Nfts
@@ -36,19 +32,4 @@ export default class Sistema {
     getNfts() {
         return this.listaNft;
       }
-
-    /**
-     * Método que devuelve si un Nft está repetido
-     * @param {*} nombreNft 
-     * @returns true si el nombre del Nft existe en la lista
-     */
-    /*nftRepetido(nombreNft) {
-        let ret = false;
-        for (let elem of this.listaNft) {
-            if (elem.nombre == nombreNft) {
-                ret = true;
-            }
-        }
-        return ret;
-    }*/
 }

@@ -1,6 +1,3 @@
-const MIN_ANIO = 1888;
-const MAX_ANIO = 2021;
-
 /**
  * Clase Nft encargada de guardar la información de los Nft del marketplace
  */
@@ -24,14 +21,6 @@ export default class Nft {
     this.setCategoria(categoria); 
     this.imagen = imagen; 
   }
-
-  /*setAnio(anio) {
-    if (anio >= MIN_ANIO && anio <= MAX_ANIO) {
-      this.anio = anio;
-    } else {
-      throw new Error(`El año ingresado es incorrecto. el NFT debe ser de los años entre ${MIN_ANIO} y ${MAX_ANIO}`);
-    }
-  }*/
 
   /**
    * Método para setear o guardar la descripción de un Nft
