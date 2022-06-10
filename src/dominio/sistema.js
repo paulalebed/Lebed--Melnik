@@ -10,15 +10,15 @@ export default class Sistema {
         this.listaNft = [];
     }
 
+    /*constructor(nft) {
+      this.listaNft.push(nft); 
+  }*/
+
     // METODOS
     /**
      * Método que agrega un Nft a la lista de Nfts
      * @param {*} nft 
      */
-   // agregarNft(nft) {
-     //   this.listaNft.push(nft);
-    //}
-
     agregar(nft) {
         let nftEnPagina = this.listaNft.some(m => m.nombre == nft.nombre);
         if (!nftEnPagina) {
@@ -42,7 +42,7 @@ export default class Sistema {
      * @param {*} nombreNft 
      * @returns true si el nombre del Nft existe en la lista
      */
-    nftRepetido(nombreNft) {
+    /*nftRepetido(nombreNft) {
         let ret = false;
         for (let elem of this.listaNft) {
             if (elem.nombre == nombreNft) {
@@ -50,5 +50,5 @@ export default class Sistema {
             }
         }
         return ret;
-    }
+    }*/
 }

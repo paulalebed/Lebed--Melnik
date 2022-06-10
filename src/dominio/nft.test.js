@@ -1,4 +1,4 @@
-import Sistema from './sistema.mjs';
+import Sistema from './sistema.js';
 import Nft from './nft.mjs';
 
 test('creación de un Nft', () => {
