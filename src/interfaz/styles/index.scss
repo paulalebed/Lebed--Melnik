@@ -32,9 +32,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+*{
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0px auto;
+}
+
+body {
+  margin: 0px auto; 
+  background-image: url("https://freedesignfile.com/upload/2016/10/Coffee-beans-blurry-picture-on-your-desktop.jpg");
 }
 
 .app-bar {
@@ -48,6 +52,7 @@ body {
 
 section {
   text-align: center;
+  width: center;
 }
 
 .content {
@@ -71,27 +76,70 @@ section {
 .my-card__media {
   background-image: url("https://lh3.googleusercontent.com/dhb4Gl6j-zpYpJqZ32JDR_0FiS2GopZ0oC9-jECVw4voQknbRKwUVLAWSANXmVq-KP2t2QVmO-KAsUaRy1sRGi0=w600");
   color:#ffffff;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .my-card__mediatwo {
   background-image: url("https://lh3.googleusercontent.com/6oZ6b-2B1Bya9sxScvo870u_HR5B8Rh8oYmuwT5pkEnInOomqkoLDBMGuCF0YLXdzKQcpMa4jI5BYSw0iWcOkqPDLiVxHVHpcSwFBQ=s200");
   color:#ffffff;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.my-card__mediathree {
+  background-image: url("https://lh3.googleusercontent.com/n3BRPDs8st9TONITH-O6e5nfT_VzP1vsv3M62gX16rQV3KBBzNXEMmgdAj49328BleP8SHEGBh9OXvRggw4O_6p355usyIVecL98lvw=w600");
+  color:#ffffff;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.my-card__mediafour {
+  background-image: url("https://lh3.googleusercontent.com/xHcTxURY0Tr03tEES3jhOne3yGybNla8DnhhCxXL8XNvswlEn-abIe76lvtHdl9f-FbfgM0lo-2LAnone9tUG7hjMzPt9h1uPcu2vA=w600");
+  color:#ffffff;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.my-card__mediafive {
+  background-image: url("https://lh3.googleusercontent.com/IFG2KQQ0uWMxadIBjU4oFrOmILxAC3Fe-sNsTfaqN8oj3Pe2m7SvvIzYVIRc5boktqa0OGQ91swvNbBMICg5ueS_PwLnTUOQkIqixz4=w600");
+  color:#ffffff;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .mdc-card-content {
-  //padding: 16px;
   text-align: center;
 }
 
 .mdc-card {
-  height: 350px;
+ // height: 350px;
+  height: 100%;
   width: 350px;
   text-align: center;
   float: inline-start;
+  background-color: #e4b3ac;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .mdc-text-field {
     margin: 1rem auto;
+    background-color: #e4b3ac;
+}
+
+.mdc-list-item {
+  background-color: #e4b3ac;
 }
 
 .button {
