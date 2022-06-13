@@ -25,6 +25,9 @@
 @use "@material/snackbar/mdc-snackbar";
 
 
+@include icon-button.core-styles;
+
+
 @include card.core-styles;
 @include textfield.core-styles;
 

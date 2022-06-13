@@ -84,6 +84,10 @@ export default class Nft {
     }
   }
 
+  /**
+   * Método toString, permite visualizar los datos de un NFT 
+   * @returns 
+   */
   toString() {
     return this.nombre + ' (' + this.categoria + ')';
   }

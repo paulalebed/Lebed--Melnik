@@ -8,6 +8,15 @@ import {MDCList} from '@material/list';
 import Nft from '../../dominio/nft.mjs';
 import Sistema from '../../dominio/sistema.js';
 
+const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
+iconButtonRipple.unbounded = true;
+
+import {MDCIconButtonToggle} from '@material/icon-button';
+const iconToggle = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button0'));
+const _iconToggle = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button1'));
+const iconToggle2 = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button2'));
+const iconToggle3 = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button3'));
+const iconToggle4 = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button4'));
 
 const sistema = new Sistema(); 
 
