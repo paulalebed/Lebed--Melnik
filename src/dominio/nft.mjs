@@ -83,5 +83,9 @@ export default class Nft {
       throw new Error(`Seleccione una Wallet`);
     }
   }
+
+  toString() {
+    return this.nombre + ' (' + this.categoria + ')';
+  }
 }
 

@@ -4,13 +4,16 @@ import { MDCTabBar } from '@material/tab-bar';
 import { MDCTextField } from '@material/textfield';
 import { MDCSelect } from '@material/select';
 import {MDCSnackbar} from '@material/snackbar';
+import {MDCList} from '@material/list';
 import Nft from '../../dominio/nft.mjs';
 import Sistema from '../../dominio/sistema.js';
+
 
 const sistema = new Sistema(); 
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = new MDCTopAppBar(topAppBarElement);
+const list = new MDCList(document.querySelector('.mdc-list'));
 
 const tabBar = new MDCTabBar(document.querySelector(".mdc-tab-bar"));
 tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
@@ -42,6 +45,7 @@ addButton.listen('click', () => {
   try {
     let newNft = new Nft(title, genre, year, description, category,image);
     sistema.agregar(newNft);
+    actualizarPagadoPor();
   } catch (error) {
     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
     snackbar.labelText = error.message;
@@ -51,9 +55,31 @@ addButton.listen('click', () => {
     console.log(nfts);
     let form = document.getElementById('form'); 
     form.reset(); 
+    actualizarPagadoPor();
 
   }
 })
+
+const listaPagadoPor = document.getElementById("personasPagadoPor");
+// AGREGA PERSONAS A LA LISTA DE PAGADOPOR (PARA MOSTRAR EN EL SELECT)
+function actualizarPagadoPor() {
+  listaPagadoPor.innerHTML = "";
+  for (let x of sistema.listaNft) {
+    let nodo = document.createElement("li");
+    nodo.className = "mdc-list-item";
+    nodo.setAttribute("data-value", x.nombre);
+    let rip = document.createElement("span");
+    rip.className = "mdc-list-item__ripple";
+    let text = document.createElement("span");
+    text.className = "mdc-list-item__text";
+    let str = x.toString();
+    let txtNombrePagado = document.createTextNode(str);
+    text.appendChild(txtNombrePagado);
+    nodo.appendChild(rip);
+    nodo.appendChild(text);
+    listaPagadoPor.appendChild(nodo);
+  }
+};
 
 //const showButton = new MDCRipple(document.getElementById('showButton'));
 /*addButton.listen('click', () => {
