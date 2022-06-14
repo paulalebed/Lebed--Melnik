@@ -50,3 +50,8 @@ test('Throws Error No selecciona Categoría', () => {
     expect(Error.message).toBe(`Seleccione una categoría para su Nft`); 
   }
 });
+
+test('creación de un nft toString', () => {
+  let unNft = new Nft("Ca", "Eth",15,"T", "Ti","foto" );
+  expect(unNft.toString()).toBe('Ca (Ti)');
+});

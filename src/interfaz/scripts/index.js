@@ -70,7 +70,6 @@ addButton.listen('click', () => {
 })
 
 const listaPagadoPor = document.getElementById("personasPagadoPor");
-// AGREGA PERSONAS A LA LISTA DE PAGADOPOR (PARA MOSTRAR EN EL SELECT)
 function actualizarPagadoPor() {
   listaPagadoPor.innerHTML = "";
   for (let x of sistema.listaNft) {
