@@ -229,10 +229,14 @@ En este caso realizamos los siguientes casos de pruebas de la funcionalidad **"A
 |                    |                                         | Caracteres alfanumericos(3)            |   
 | Monto              |Caracteres numéricos positivos o cero(4) | Caracteres numéricos negativos(5)      |
 |                    |                                         | Caracteres alfanuméricos(6)            |     
-| Descripción        |Fechas anteriores al dia de hoy(7)       | RELLENAR                               |
-| Imagen             |Fechas anteriores al dia de hoy(7)       | RELLENAR                               | 
-| Wallet             |Fechas anteriores al dia de hoy(7)       |  RELLENAR                              |
-| Categoria          |Fechas anteriores al dia de hoy(7)       |  RELLENAR                              |
+| Descripción        |Caracteres alfabeticos, númericos y      |                                        |
+|                    |alfanumericos (7)                        |                                        |
+| Imagen             |Caracteres alfabeticos, númericos y      |                                        |
+|                    | alfanumericos (8)                       |                                        |
+| Wallet             |Seleccion dentro de opciones de el combo:| No seleccionar nada (10)               |
+|                    |list: MetaMask/Coinbase Wallet/Phantom(9)|                                        | 
+| Categoria          |Seleccion dentro de opciones de el combo:|No seleccionar nada (12)                |
+|                    |list:Fotografía, Animado, Audiovisual(11)|                                        |
 
 <img src="img/pruebasClaseEquivalencia.png" alt="pruebasClasesEquivalencia" /> //RELLENAR?
 
@@ -261,47 +265,44 @@ En este caso realizamos los siguientes casos de pruebas de la funcionalidad **"A
 
 * **Estructura de división:** 
 
-RELLENAR TODO 
-<u>Misión:</u> 
-<u>Oportunidad:</u> 
-
-<u>Investigación y reporte de incidentes:</u> 
-<u>Diseño y ejecución:</u> 
-<u>Configuración de las pruebas:</u> 
+<u>Misión: 100% (puntos 1,2,3,4,5,6,7) </u> 
+<u>Oportunidad: 85% (puntos 1,2,3,5,6,7)</u> 
+<u>Investigación y reporte de incidentes: 65%</u> 
+<u>Diseño y ejecución:30% </u> 
+<u>Configuración de las pruebas: 5%</u> 
 
 ### Sesión #2:
 
 * **Aplicación bajo prueba:** CultoCafe
 * **Duración:** 10 min (Corta)
 * **Entorno:**  Google Chrome Versión 102.0.5005.61 
-* **Objetivo:**  Chequear el funcionamiento correcto de ver mis Nft
+* **Objetivo:**  Chequear el funcionamiento correcto de la visualización de lal lista "ver mis Nft"
 
 * **Notas de las pruebas:**
 
-RELLENAR con mas
 **1)** Cuando algun tipo de informacion muy larga, no se permite ver de forma completa y lo corta. Debería acomodarse de forma que aparezca completa, o, en su defecto con puntos suspensivos ("...").
+
+**2)** El sistema no muestra la imagen del Nft, habiendose ingresandose la direccion de la imagen en el campo correspondiente. 
+
+**3)** Estaría bueno que se muestre de manera más espaciada, separado uno del otro. 
 
 * **Estructura de división:** 
 
-RELLENAR TODO 
-<u>Misión:</u> 
-<u>Oportunidad:</u> 
+<u>Misión:66,6% (puntos 1 y 3)</u> 
+<u>Oportunidad: 66,6% (puntos 1 y 3)</u> 
 
-<u>Investigación y reporte de incidentes:</u> 
-<u>Diseño y ejecución:</u> 
-<u>Configuración de las pruebas:</u> 
+<u>Investigación y reporte de incidentes: 30%</u> 
+<u>Diseño y ejecución: 70%</u> 
+<u>Configuración de las pruebas: 0%</u> 
 
 ## REPORTE DE ISSUES
 A la hora de mejorar la calidad de nuestro proyecto reportamos issues. Estos representan bugs, improvements y missing features. Pueden ser visualizados en el tab de issues de GitHub y los dejamos abiertos ya sea para correcciones o pislbes mejoras que pueden llegar a hacerse en el futuro. Además hubo otros que issues que encontramos antes de realizar el **code freeze**. Por suerte estos los llegamos a solucionar y por lo tanto cerrar en GitHub. (RELLENAR. en verdad hacer o chequear que este ahi)
 
-Los issues abiertos que reportamos fueron:
+Los issues que reportamos fueron:
 
-RELLENAR CON MUCHOS
-* <a href="RELLENAR link repo a ese issue">RELLENAR DESCRIPCION </a>
+* <a href="https://github.com/paulalebed/Lebed--Melnik/issues/1#issue-1266278414">RELLENAR DESCRIPCION </a>
+* <a href="https://github.com/paulalebed/Lebed--Melnik/issues/2#issue-1268645840"> El programa agrega el valor de monto literal. Por ejemplo si el usuario ingresa "00328", se agregaría la pieza de Nft con el respectivo montos en lugar de "328". </a>
 
-Los issues cerrados reportados fueron los siguientes:
-
-* <a href="RELLENAR link repo a ese issue">RELLENAR DESCRIPCION</a>
 
 ### Evaluación global de calidad
 
