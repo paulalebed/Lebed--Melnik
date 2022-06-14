@@ -7,50 +7,50 @@
 | Fecha          | 20/07/2021                                             |
 | Clase          | M3B - Docente: Alejandro Adorjan                       |
 | Integrantes    | Paula Lebed y Tamara Melnik                            |
-| Link           | https://github.com/paulalebed/oblig2.git               |
+| Link           | https://github.com/paulalebed/Lebed--Melnik.git        |
 
-RELLENAR (agregar indice)
+##INDICE
+CONSTRUCION
+1)Aspectos generales
+2)Funciones principales implementadas: casos de uso 
+3)Librerias externas
+
+INTERFAZ DE USUARIO
+1)Usabilidad
+2)Estándar de accesibilidad WCAG
+3)Especificación de estilo
+4)Caracterísicas generales
+
+CODIFICACIÓN
+1)IDE: Visual Studio Code
+2)Buenas prácticas para la Programación Orientada a Objetos
+
+TEST UNITARIOS
+
+TEST DE SISTEMA
+1)Sobre la versión congelada 
+2)Aplicación de la técnica partición equivalente a traves de los casos de prueba
+3)Pruebas exploratorias
+
+REPORTE DE ISSUES
+1)Evaluación global de calidad
+
+REFLEXIÓNES PERSONALES
+
+PRESENTACIÓNES ORALES INDIVIDUALES
+    
 
 ## CONSTRUCCIÓN
 
 ### Aspectos generales:
 
-Para lograr construir el programa hicimos uso de dos diferentes carpetas, las cuales contienen la información: dominio e interfaz. Por un lado, en dominio, se puede encontrar lo que es la  funcionalidad del programa: aquello que es necesario para correr la lógica del mismo. Las clases utilizadas fueron **Sistema**, **Usuario** y **Nft**. Además dentro del dominio tambien se pueden encontrar los archivos para probar el proyecto (Jest). Por otro lado, en interfaz, contamos con una carpeta que refiere a los estilos de nombre style.css y otra de scripts, llamada index.js.
+Para lograr construir el programa hicimos uso de dos diferentes carpetas, las cuales contienen la información: dominio e interfaz. Por un lado, en dominio, se puede encontrar lo que es la  funcionalidad del programa: aquello que es necesario para correr la lógica del mismo. Las clases utilizadas fueron **Sistema** y **Nft**. Además dentro del dominio tambien se pueden encontrar los archivos para probar el proyecto (Jest). Por otro lado, en interfaz, contamos con una carpeta que refiere a los estilos de nombre style.css y otra de scripts, llamada index.js.
 
 ### Funciones principales:
 #### Implementación
 
 Para este prototipo decidimos realizar la implementacion de las funcionalidades de los siguientes casos de uso:
 
-### **ID:** CU1: Visualizar características 
-
-**Referencias:** 
-- Características (RF4)
-
-**Título:**  CU1
-
-**Actor:** Sistema y Usuario
-
-**Descripción:** El sistema deberá permitir a los usuarios ver  una serie de características de una pieza de NFT, tales como historial de precios, actual vendedor, fecha de creación de la pieza, fecha de finalización de la subasta. 
-
-**Prioridad:** Media
-
-**Precondición:** El usuario debe haber seleccionado el NFT del cual desea ver las características.
-
-**Poscondición:** El sistema debe desplegar una serie de características de la pieza coleccionable.
-
-**Curso Normal:** 
-
-| Acción del Actor | Respuesta del sistema |
-|--|--|
-| **1.** Selecciona un NFT | **2.** Se amplía el NFT seleccionado en pantalla |
-| **3.** Elige ver las características | **4.** Muestra la lista de características con enlaces a página web, información de los creadores, datos estadísticos de la pieza, fechas de creación y finalización de la subasta, entre otras.
-##
-**Cursos Alternativos:**
-
-- **1.1** El usuario no selecciono un NFT (fín del curso)
-- **3.1** El usuario no elija ver las características (fín del curso)
-
 ### **ID:** CU2: Publicar NFT
 
 **Referencias:** 
@@ -85,68 +85,28 @@ Para este prototipo decidimos realizar la implementacion de las funcionalidades 
 - **3.1** El usuario no seleccionó categoría (fín del curso)
 - **5.1**  El usuario no completa con los datos requeridos (fín del curso)
 
-
+### **ID:** CU8: Ranking
 
 **Referencias:** 
-- Características (RF4)
+- Ranking (RF10)
 
-**Título:**  CU1
+**Título:**  CU8
 
 **Actor:** Sistema y Usuario
 
-**Descripción:** El sistema deberá permitir a los usuarios ver  una serie de características de una pieza de NFT, tales como historial de precios, actual vendedor, fecha de creación de la pieza, fecha de finalización de la subasta. 
+**Descripción:** El sistema deberá mostrar, si el usuario lo solicita, el Ranking de NFT de los últimos 7 días.
 
-**Prioridad:** Media
+**Prioridad:** Baja
 
-**Precondición:** El usuario debe haber seleccionado el NFT del cual desea ver las características.
+**Precondición:** El usuario deberá estar correctamente logueado y contar con conexión a una Wallet.
 
-**Poscondición:** El sistema debe desplegar una serie de características de la pieza coleccionable.
+**Poscondición:** El sistema deberá mostrar en la pantalla el Ranking en orden y actualizado.
 
 **Curso Normal:** 
 
 | Acción del Actor | Respuesta del sistema |
 |--|--|
-| **1.** Selecciona un NFT | **2.** Se amplía el NFT seleccionado en pantalla |
-| **3.** Elige ver las características | **4.** Muestra la lista de características con enlaces a página web, información de los creadores, datos estadísticos de la pieza, fechas de creación y finalización de la subasta, entre otras.
-##
-**Cursos Alternativos:**
-
-- **1.1** El usuario no selecciono un NFT (fín del curso)
-- **3.1** El usuario no elija ver las características (fín del curso)
-
-### **ID:** CU2: Publicar NFT
-
-**Referencias:** 
-- Conexión con Wallet (RF1)
-- Listar NFT para la venta (RF5)
-- Login (RF9)
-
-**Título:**  CU2
-
-**Actor:** Sistema y Usuario
-
-**Descripción:** El sistema deberá permitir a sus usuarios listar un NFT para la venta.
-
-**Prioridad:** Alta
-
-**Precondición:** El usuario deberá tener una cuenta creada en el marketplace y deberá estar correctamente logueado. Además, deberá tener su wallet relacionada a la misma. 
-
-**Poscondición:** El usuario será capaz de listar sus piezas coleccionables para la venta y estarán disponibles en el catálogo para que los usuarios compradores puedan elegir. 
-
-**Curso Normal:** 
-
-| Acción del Actor | Respuesta del sistema |
-|--|--|
-| **1.** Selecciona subir una pieza de NFT | **2.** Despliega la lista de categorías disponibles|
-| **3.** Selecciona una categoría | **4.** El sistema pedirá al vendedor los datos de la pieza (características a completar, links necesarios, precio de la pieza) para concretar el listamiento. |
-| **5.** Completa los datos del formulario y sube el archivo del NFT | **6.**  El sistema chequea que los datos del formulario (links, precio, características, información del dueño, calidad del NFT) estén completos y cumplan con los formatos. En caso de cumplir la condición lista el NFT dentro de la categoría y lo deja visible para los usuarios.|
-
-##
-**Cursos Alternativos:**
-
--  **1.1** El usuario no selecciona subir un NFT(fin del curso) 
-- **3.1** El usuario no seleccionó categoría (fín del curso)
-- **5.1**  El usuario no completa con los datos requeridos (fín del curso)
+| **1.** Selecciona el botón para ver las estadísticas de su perfil (cuentas alcanzadas y cuentas que interactuaron) | **2.** 2. Actualiza la pantalla y muestra dichas estadísticas|
 
 ### Librerías externas:
 
@@ -208,15 +168,14 @@ Para especificar el estilo de la web, optamos por hacer uso de lo siguiente:
 **4.** Iconos:  material icons
 
 ### A nivel de caracteristicas generales:
-Nuestra interfaz cuenta con RELLENAR secciones principales: **RELLENAR**, **RELLENAR** y **RELLENAR**. Además, esta tiene un diseño web adaptable (responsive).
+Nuestra interfaz cuenta con dos secciones principales: **Ranking** y **Agregar Nft**. Dentro de esta segunda es que se puede visualizar la lista de NFTs ingresados por el propio usuarios. Además, esta tiene un diseño web adaptable (responsive).
 
 Con respecto a la interfaz, esta hace uso de <a href="https://material.io/components?platform=web"> Material Design Web Components</a> para crear su estética. Además, para lograr navegar entre secciones hacemos uso de una <a href="https://material.io/components/app-bars-top">top app bar</a>. Esta da la oportunidad de que solo una sección este activa en un momento determinado. Por otro lado, creamos varios <a href="https://material.io/components/buttons#usage">botónes</a>, como por ejemplo de "Agregar" o de "Ver mis Nft". Estos pueden ser encontrados sobre la barra superior de la pagina, otorgandole a los usuarios un fácil acceso a éstos cada vez que este decida agregar un nuevo gasto, de forma simple y dinámica. Cabe destacar que cada seccion cuenta con sus características y funciones particulares: 
 
-* **RELLENAR (SECCION)** RELLENAR (mirar readme)
+* **Ranking**  Mantiene una lista actualizada de el Ranking de los 5 Nfts mas visualizados. Para cada Nft se muestran las siguientes características: Contract Adress, Token ID, Token Standard, Blockchain, Creator Fees, Creator Name y precio.  Ademas existe la posibilidad de guardarlos en la wishlist a traves del boton del corazon.
 
-* **RELLENAR (SECCION)** RELLENAR (mirar readme)
+* **Agregar Nft** Esta sección permite publicar nuevas piezas de Nft con la comunidad de CultoCafe. Las personas agregan sus Nft brindando información de nombre, wallet, monto, descripción, categoria y imagen. También, en esta sección se puede visualizar toda la lista de Nfts publicados, junto con sus respectivas características. Esta lista se actualiza cada vez que es agregado un Nft al sistema.
 
-* **RELLENAR (SECCION)** RELLENAR (mirar readme)
 
 ## CODIFICACIÓN
 ### IDE: Visual Studio Code
