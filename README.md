@@ -221,24 +221,13 @@ Debido al sistema operativo del que disponiamos cada una de las integrantes del 
 
 ### Aplicación de la técnica partición equivalente a traves de los casos de prueba
 
-En este caso realizamos los siguientes casos de pruebas de la funcionalidad **"Agregar Nft"**
+Realizamos los siguientes casos de pruebas de la funcionalidad **"Agregar Nft"**: 
 
 | Entrada / Variable | Clases Validas                          | Clases Invalidas                       | 
 |--------------------|-----------------------------------------|----------------------------------------|
-| Nombre             |Caracteres solamente alfabeticos(1)      | Caracteres solamente numéricos(2)      |
-|                    |                                         | Caracteres alfanumericos(3)            |   
-| Monto              |Caracteres numéricos positivos o cero(4) | Caracteres numéricos negativos(5)      |
-|                    |                                         | Caracteres alfanuméricos(6)            |     
-| Descripción        |Caracteres alfabeticos, númericos y      |                                        |
-|                    |alfanumericos (7)                        |                                        |
-| Imagen             |Caracteres alfabeticos, númericos y      |                                        |
-|                    | alfanumericos (8)                       |                                        |
-| Wallet             |Seleccion dentro de opciones de el combo:| No seleccionar nada (10)               |
-|                    |list: MetaMask/Coinbase Wallet/Phantom(9)|                                        | 
-| Categoria          |Seleccion dentro de opciones de el combo:|No seleccionar nada (12)                |
-|                    |list:Fotografía, Animado, Audiovisual(11)|                                        |
-
-<img src="img/pruebasClaseEquivalencia.png" alt="pruebasClasesEquivalencia" /> //RELLENAR?
+| Monto              |Caracteres numéricos positivos o cero(1) | Caracteres numéricos negativos(2)      |
+  
+<img src="./particiónEquivalente.png" alt="Partición equivalente" /> 
 
 ### Pruebas Exploratorias
 
@@ -257,7 +246,7 @@ En este caso realizamos los siguientes casos de pruebas de la funcionalidad **"A
 
 **3)** Si el usuario no relleno el campo de nombre, la interfaz permite agregar la pieza de Nft. Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
 
-**4)**El programa agrega el valor de monto literal. Por ejemplo si el usuario ingresa "00273" o "000", se agregaría la pieza de Nft con el respectivo montos en lugar de "273" o "0". Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar. (RELLENAR . me refiero a hacerlo) 
+**4)**El programa agrega el valor de monto literal. Por ejemplo si el usuario ingresa "00273" o "000", se agregaría la pieza de Nft con el respectivo montos en lugar de "273" o "0". Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
 
 **6)** Si se ingresa dentro del campo de texto un String muy largo o dentro del nombre una cifra extensa, aparece de manera cortado en la lista de Nfts agregados. 
 
