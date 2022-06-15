@@ -69,9 +69,9 @@ addButton.listen('click', () => {
   }
 })
 
-const listaPagadoPor = document.getElementById("personasPagadoPor");
+const listaNftsAgregados = document.getElementById("misNFT");
 function actualizarPagadoPor() {
-  listaPagadoPor.innerHTML = "";
+  listaNftsAgregados.innerHTML = "";
   for (let x of sistema.listaNft) {
     let nodo = document.createElement("li");
     nodo.className = "mdc-list-item";
@@ -81,11 +81,11 @@ function actualizarPagadoPor() {
     let text = document.createElement("span");
     text.className = "mdc-list-item__text";
     let str = x.toString();
-    let txtNombrePagado = document.createTextNode(str);
-    text.appendChild(txtNombrePagado);
+    let txtNombreNFT = document.createTextNode(str);
+    text.appendChild(txtNombreNFT);
     nodo.appendChild(rip);
     nodo.appendChild(text);
-    listaPagadoPor.appendChild(nodo);
+    listaNftsAgregados.appendChild(nodo);
   }
 };
 

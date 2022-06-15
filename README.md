@@ -140,7 +140,7 @@ Para llevar a cabo el proyecto, nuestro programa cuenta con dependencias de libr
 Para llevar a cabo el desarrollo la interfaz y su disposición, hicimos uso de los principios de usabilidad presentados en clase. Optamos por basarnos en las **Heurísticas de Nielsen**. A continuación, describiremos cómo es que la pagina web de CultoCafe cumple con varias de estas.
 
 * **Estética y diseño minimalista:** Nuestra intención es crear un diseño que resulte atractivo para el usuario desde una prespectiva minimalista. Esto se debe a que creemos que es más placentero navegar por una web que cuente con un enfoque minimal, haciendo uso de botones y texto solo donde y cuando sea necesario, otorgandole un uso plenamente informativo. Creemos en el concepto de "menos es más", por lo que evitamos en todo momemnto invadir y saturar al usuario con enormes campos de texto de información, imagenes y más.
-    A modo de conclusion, nuestro diseño de interfaz, el cual cuenta con RELLENAR pestañas principales y los respectivos campos dentro de ellas, fue creado con la intención de facilitar el entendimiento del usuario, trayendo por consecuencia una preferencia de la página si se la comparado con otras con texto excesivo, pesado y robusto.  
+A modo de conclusion, nuestro diseño de interfaz, el cual cuenta con dos  pestañas principales y los respectivos campos dentro de ellas, fue creado con la intención de facilitar el entendimiento del usuario, trayendo por consecuencia una preferencia de la página si se la compara con otras con texto excesivo, pesado y robusto.  
         
 * **Consistencia y estándares:** Tal y como lo indica la heurística es necesario que los programas mantengan un determinado nivel de consistencia dentro de lo que respecta a la interfaz, evitando de esta manera los casos en los que cierto elemento significa una cosa, luego pasa a significar otra distinta y así repetidas veces. "Consistencia y estandares" refiere a como se ve explicitamente el programa, acompañando dicho resultado de cuanto esfuerzo y empeño le fue a otorgado al diseño. Cuanto más consiste sea, sera más fácil para el usuario trabajar con el intuitivamente, sabiendo así el proposito de cada campo a rellenar, botón y/o lista. Esto se puede lograr de varias maneras, ya sea señalizando los íconos con texto que resulten informativos o agregando cabeceras que indiquen qué tipo de información se podrá encontrar en cada una de las secciones o columnas (por ejemplo en el caso de la lista de Mis Nft).
     Otro caso que podría ejemplificar este aspecto es cuando no se ha agregado ningún NFT. Creemos que es más conveniente que el programa muestre "No has agregado ningúna pieza de Nft", dandole así a entender al usuario que allí ira la lista de Nfts propios, pero que aún no ha ingresado uno, en lugar de que se presente una cabecera completamente limpia y ausente datos.
@@ -212,12 +212,12 @@ Cabe destacar que cada carpeta contiene su propio package.json.
 
 Dentro de nuestro proyecto implementamos tests para cubrir cada elemento de la clase. El beneficio de esto fue probar que su comportamiento coincida con el esperado. A traves de estos logramos obtener la cobertura del dominio.
 
-<img src="img/PruebasJest.png" alt="Pruebas Unitarias - Jest" /> //RELLENAR CON LO NUESTRO
+<img src="./PruebasUnitarias.png" alt="Pruebas Unitarias - Jest" /> 
 
 ## TEST DE SISTEMA
 
 ### Sobre la versión congelada 
-Debido a el sistema operativo del que disponiamos cada una de las integrantes del grupo, el test del sistema fue realizado en Windows y Mac. Además se testeo tanto en Edge como en Chrome. Por suerte, todos los test obtuvieron el resultado esperado. //RELLENAR (confirmar si todos los test tuvieron el resultado esperado en verdad)
+Debido al sistema operativo del que disponiamos cada una de las integrantes del grupo, el test del sistema fue realizado en Windows y Mac. Además se testeo tanto en Edge como en Chrome. Por suerte, todos los test obtuvieron el resultado esperado. Para ambos sistemas operativos las funcionalidades corrían de manera correcta y la visualización era de tipo responsive.
 
 ### Aplicación de la técnica partición equivalente a traves de los casos de prueba
 
@@ -296,17 +296,17 @@ En este caso realizamos los siguientes casos de pruebas de la funcionalidad **"A
 <u>Configuración de las pruebas: 0%</u> 
 
 ## REPORTE DE ISSUES
-A la hora de mejorar la calidad de nuestro proyecto reportamos issues. Estos representan bugs, improvements y missing features. Pueden ser visualizados en el tab de issues de GitHub y los dejamos abiertos ya sea para correcciones o pislbes mejoras que pueden llegar a hacerse en el futuro. Además hubo otros que issues que encontramos antes de realizar el **code freeze**. Por suerte estos los llegamos a solucionar y por lo tanto cerrar en GitHub. (RELLENAR. en verdad hacer o chequear que este ahi)
+A la hora de mejorar la calidad de nuestro proyecto reportamos issues. Estos representan bugs, improvements y missing features. Pueden ser visualizados en el tab de issues de GitHub y los dejamos abiertos ya sea para correcciones o posibles mejoras que pueden llegar a hacerse en el futuro. Además hubo otros que issues que encontramos antes de realizar el **code freeze**. Por suerte estos los llegamos a solucionar y por lo tanto cerrar en GitHub. El reporte de issues tenía como objetivo que todos los integrantes del equipo estuvieran al tanto del issue y alguno pueda adjudicarselo para tratar de solucionarlo. No fueron reportados todos los errores que encontramos durante el desarrollo ya que algunos de los mismos fueron solucionados de manera inmediata.
 
 Los issues que reportamos fueron:
 
-* <a href="https://github.com/paulalebed/Lebed--Melnik/issues/1#issue-1266278414">RELLENAR DESCRIPCION </a>
+* <a href="https://github.com/paulalebed/Lebed--Melnik/issues/1#issue-1266278414"> El dominio debe tener un 100% de cobertura que es obtenido mediante las pruebas unitarias con Jest. En este caso, no estaba correctamente definido el "sistema" y hacíamos referencia al mismo, lo que evacuaba en un error. </a>
 * <a href="https://github.com/paulalebed/Lebed--Melnik/issues/2#issue-1268645840"> El programa agrega el valor de monto literal. Por ejemplo si el usuario ingresa "00328", se agregaría la pieza de Nft con el respectivo montos en lugar de "328". </a>
 
 
 ### Evaluación global de calidad
 
-Utilizamos <a href="RELLENAR link eslint">Eslint</a> de Google para evaluar nuestro proyecto a nivel de buenas prácticas, rendimiento y accesibilidad. 
+Utilizamos <a href="https://eslint.org/">Eslint</a> de Google para evaluar nuestro proyecto a nivel de buenas prácticas, rendimiento y accesibilidad. 
 
 ## REFLEXIÓNES PERSONALES
 
