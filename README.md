@@ -174,7 +174,7 @@ Con respecto a la interfaz, esta hace uso de <a href="https://material.io/compon
 
 * **Ranking**  Mantiene una lista actualizada de el Ranking de los 5 Nfts mas visualizados. Para cada Nft se muestran las siguientes características: Contract Adress, Token ID, Token Standard, Blockchain, Creator Fees, Creator Name y precio.  Ademas existe la posibilidad de guardarlos en la wishlist a traves del boton del corazon.
 
-* **Agregar Nft** Esta sección permite publicar nuevas piezas de Nft con la comunidad de CultoCafe. Las personas agregan sus Nft brindando información de nombre, wallet, monto, descripción, categoria y imagen. También, en esta sección se puede visualizar toda la lista de Nfts publicados, junto con sus respectivas características. Esta lista se actualiza cada vez que es agregado un Nft al sistema.
+* **Agregar Nft** Esta sección permite publicar nuevas piezas de Nft con la comunidad de CultoCafe. Las personas agregan sus Nft brindando información de nombre, wallet, monto, descripción, categoria y imagen. También, en esta sección se puede visualizar toda la lista de Nfts publicados, junto con sus respectivas características. Esta lista se actualiza cada vez que un Nft es agregado al sistema.
 
 
 ## CODIFICACIÓN
