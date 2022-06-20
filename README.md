@@ -227,9 +227,10 @@ Debido al sistema operativo del que disponiamos cada una de las integrantes del 
 
 Realizamos los siguientes casos de pruebas de la funcionalidad **"Agregar Nft"**: 
 
-| Entrada / Variable | Clases Validas                          | Clases Invalidas                       | 
-|--------------------|-----------------------------------------|----------------------------------------|
-| Monto              |Caracteres numéricos positivos o cero con decimales(1) | Caracteres numéricos negativos(2)      |
+| Entrada / Variable | Clases Validas                                        | Clases Invalidas                               | 
+|--------------------|-------------------------------------------------------|------------------------------------------------|
+| Monto              |Caracteres numéricos positivos o cero con decimales(1) | Caracteres numéricos negativos(2)              |
+| Nombre             |No repetidos(3)                                        | Repetidos(4)                                   |
   
 <img src="./particiónEquivalente.png" alt="Partición equivalente" /> 
 
