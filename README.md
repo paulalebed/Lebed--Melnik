@@ -4,36 +4,39 @@
 
 | Identificación |                                                        |
 |----------------|--------------------------------------------------------|
-| Fecha          | 20/07/2021                                             |
+| Fecha          | 22/06/2022                                             |
 | Clase          | M3B - Docente: Alejandro Adorjan                       |
 | Integrantes    | Paula Lebed y Tamara Melnik                            |
 | Link           | https://github.com/paulalebed/Lebed--Melnik.git        |
 
 ##INDICE
 CONSTRUCION
-1)Aspectos generales
-2)Funciones principales implementadas: casos de uso 
-3)Librerias externas
+**1.** Aspectos generales
+
+**2.** Funciones principales implementadas: casos de uso 
+
+**3.** Librerias externas
+
 
 INTERFAZ DE USUARIO
-1)Usabilidad
-2)Estándar de accesibilidad WCAG
-3)Especificación de estilo
-4)Caracterísicas generales
+**1.** Usabilidad
+**2.** Estándar de accesibilidad WCAG
+**3.** Especificación de estilo
+**4.** Caracterísicas generales
 
 CODIFICACIÓN
-1)IDE: Visual Studio Code
-2)Buenas prácticas para la Programación Orientada a Objetos
+**1.** IDE: Visual Studio Code
+**2.** Buenas prácticas para la Programación Orientada a Objetos
 
 TEST UNITARIOS
 
 TEST DE SISTEMA
-1)Sobre la versión congelada 
-2)Aplicación de la técnica partición equivalente a traves de los casos de prueba
-3)Pruebas exploratorias
+**1.** Sobre la versión congelada 
+**2.** Aplicación de la técnica partición equivalente a traves de los casos de prueba
+**3.** Pruebas exploratorias
 
 REPORTE DE ISSUES
-1)Evaluación global de calidad
+**1.** Evaluación global de calidad
 
 REFLEXIÓNES PERSONALES
 
@@ -44,12 +47,12 @@ PRESENTACIÓNES ORALES INDIVIDUALES
 
 ### Aspectos generales:
 
-Para lograr construir el programa hicimos uso de dos diferentes carpetas, las cuales contienen la información: dominio e interfaz. Por un lado, en dominio, se puede encontrar lo que es la  funcionalidad del programa: aquello que es necesario para correr la lógica del mismo. Las clases utilizadas fueron **Sistema** y **Nft**. Además dentro del dominio tambien se pueden encontrar los archivos para probar el proyecto (Jest). Por otro lado, en interfaz, contamos con una carpeta que refiere a los estilos de nombre style.css y otra de scripts, llamada index.js.
+Para lograr construir el programa hicimos uso de dos diferentes carpetas, las cuales contienen la información: dominio e interfaz. Por un lado, en dominio, se puede encontrar lo que es la  funcionalidad del programa: aquello que es necesario para correr la lógica del mismo. Las clases utilizadas fueron **Sistema** y **Nft**. Además dentro del dominio tambien se pueden encontrar los archivos para probar el proyecto (Pruebas unitarias con Jest). Por otro lado, en interfaz, contamos con una carpeta que refiere a los estilos de nombre style.css y otra de scripts, llamada index.js, además del index.html. 
 
 ### Funciones principales:
 #### Implementación
 
-Para este prototipo decidimos realizar la implementacion de las funcionalidades de los siguientes casos de uso:
+Para este prototipo decidimos realizar la implementación de las funcionalidades de los siguientes casos de uso especificados en la primer entrega:
 
 ### **ID:** CU2: Publicar NFT
 
@@ -139,19 +142,19 @@ Para llevar a cabo el proyecto, nuestro programa cuenta con dependencias de libr
  ### Usabilidad:
 Para llevar a cabo el desarrollo la interfaz y su disposición, hicimos uso de los principios de usabilidad presentados en clase. Optamos por basarnos en las **Heurísticas de Nielsen**. A continuación, describiremos cómo es que la pagina web de CultoCafe cumple con varias de estas.
 
-* **Estética y diseño minimalista:** Nuestra intención es crear un diseño que resulte atractivo para el usuario desde una prespectiva minimalista. Esto se debe a que creemos que es más placentero navegar por una web que cuente con un enfoque minimal, haciendo uso de botones y texto solo donde y cuando sea necesario, otorgandole un uso plenamente informativo. Creemos en el concepto de "menos es más", por lo que evitamos en todo momemnto invadir y saturar al usuario con enormes campos de texto de información, imagenes y más.
-A modo de conclusion, nuestro diseño de interfaz, el cual cuenta con dos  pestañas principales y los respectivos campos dentro de ellas, fue creado con la intención de facilitar el entendimiento del usuario, trayendo por consecuencia una preferencia de la página si se la compara con otras con texto excesivo, pesado y robusto.  
+* **Estética y diseño minimalista:** Nuestra intención es crear un diseño que resulte atractivo para el usuario desde una prespectiva minimalista. Esto se debe a que creemos que es más placentero navegar por una web que cuente con un enfoque minimal, haciendo uso de botones y texto solo donde y cuando sea necesario, otorgandole un uso plenamente informativo. Creemos en el concepto de "menos es más", por lo que evitamos en todo momemento invadir y saturar al usuario con enormes campos de texto de información, imagenes y más.
+A modo de conclusion, nuestro diseño de interfaz, el cual cuenta con tres pestañas principales y los respectivos campos dentro de ellas, fue creado con la intención de facilitar el entendimiento del usuario, trayendo por consecuencia una preferencia de la página si se la compara con otras con texto excesivo, pesado y robusto.  
         
-* **Consistencia y estándares:** Tal y como lo indica la heurística es necesario que los programas mantengan un determinado nivel de consistencia dentro de lo que respecta a la interfaz, evitando de esta manera los casos en los que cierto elemento significa una cosa, luego pasa a significar otra distinta y así repetidas veces. "Consistencia y estandares" refiere a como se ve explicitamente el programa, acompañando dicho resultado de cuanto esfuerzo y empeño le fue a otorgado al diseño. Cuanto más consiste sea, sera más fácil para el usuario trabajar con el intuitivamente, sabiendo así el proposito de cada campo a rellenar, botón y/o lista. Esto se puede lograr de varias maneras, ya sea señalizando los íconos con texto que resulten informativos o agregando cabeceras que indiquen qué tipo de información se podrá encontrar en cada una de las secciones o columnas (por ejemplo en el caso de la lista de Mis Nft).
-    Otro caso que podría ejemplificar este aspecto es cuando no se ha agregado ningún NFT. Creemos que es más conveniente que el programa muestre "No has agregado ningúna pieza de Nft", dandole así a entender al usuario que allí ira la lista de Nfts propios, pero que aún no ha ingresado uno, en lugar de que se presente una cabecera completamente limpia y ausente datos.
+* **Consistencia y estándares:** Tal y como lo indica la heurística es necesario que los programas mantengan un determinado nivel de consistencia dentro de lo que respecta a la interfaz, evitando de esta manera los casos en los que cierto elemento significa una cosa, luego pasa a significar otra distinta y así repetidas veces. "Consistencia y estandares" refiere a como se ve explicitamente el programa, acompañando dicho resultado de cuanto esfuerzo y empeño le fue a otorgado al diseño. Cuanto más consistente sea, sera más fácil para el usuario trabajar con el intuitivamente, sabiendo así el proposito de cada campo a rellenar, botón y/o lista. Esto se puede lograr de varias maneras, ya sea señalizando los íconos con texto que resulten informativos o agregando cabeceras que indiquen qué tipo de información se podrá encontrar en cada una de las secciones o columnas (por ejemplo en el caso de la lista de Mis Nft).
+Otro caso que podría ejemplificar este aspecto es cuando no se ha agregado ningún NFT. Creemos que es más conveniente que el programa muestre "No has agregado ningúna pieza de Nft", dandole así a entender al usuario que allí ira la lista de Nfts propios, pero que aún no ha ingresado uno, en lugar de que se presente una cabecera completamente limpia y ausente datos.
 
-* **Visibilidad del estado del sistema:** Esta heuristica es la que nos parecio más relevante a la hora de pensar en la usabilidad de nuestro programa y es la primera heurística definida por Nielsen. En terminos generales, refiere a que el usuario tenga un entendimiento de donde esta parado en todo momento, logrando saber que función esta realizando y en que parte del proceso esta. Un ejemplo practico sería cuando la pagina permite al usuario agregar una pieza de Nft. Aquí la pestaña no ofrece unicamente los campos a rellenar, sino que también da detalles como "Nombre", "Monto", "Wallet", indicando como aclaración qué tipo de información debe ir dentro de cada uno. Además, si se ingresa información incompatible a dichos campos (que no coincide con el formato de entrada esperado), se muesta un <a href="https://material.io/components/snackbars">snackbar</a>, indicando la falla.
+* **Visibilidad del estado del sistema:** Esta heuristica es la que nos pareció más relevante a la hora de pensar en la usabilidad de nuestro programa y es la primera heurística definida por Nielsen. En términos generales, refiere a que el usuario tenga un entendimiento de donde está parado en todo momento, logrando saber que función está realizando y en que parte del proceso está. Un ejemplo practico sería cuando la pagina permite al usuario agregar una pieza de Nft. Aquí la pestaña no ofrece unicamente los campos a rellenar, sino que también da detalles como "Nombre", "Monto", "Wallet", indicando como aclaración qué tipo de información debe ir dentro de cada uno. Además, si se ingresa información incompatible a dichos campos (que no coincide con el formato de entrada esperado), se muesta un <a href="https://material.io/components/snackbars">snackbar</a>, indicando la falla.
 
 ### Estándar de accesibilidad WCAG:
 
 A modo de crear un programa accesible para la mayor cantidad de público posible, decidimos seguir con los estándares de accesibilidad propuestos en el documento WCAG. En este son especificadas distintas recomendaciones en lo que respecta a la accesibilidad para una interfaz web. La idea consiste en no limitar o perjudicar a individuos con cierta discapacidad, sea del tipo que sea (dislexia, de lectura, vista, etc). Presentamos ciertos ejemplos de estos estandares, aunque existen más:
-   ** Distinguible**
-   ** Tiempo suficiente para rellenar los campos** 
+   **Distinguible**
+   **Tiempo suficiente para rellenar los campos** 
    **Alternativas de texto**
    **Adaptable**
 
@@ -168,14 +171,15 @@ Para especificar el estilo de la web, optamos por hacer uso de lo siguiente:
 **4.** Iconos:  material icons
 
 ### A nivel de caracteristicas generales:
-Nuestra interfaz cuenta con dos secciones principales: **Ranking** y **Agregar Nft**. Dentro de esta segunda es que se puede visualizar la lista de NFTs ingresados por el propio usuarios. Además, esta tiene un diseño web adaptable (responsive).
+Nuestra interfaz cuenta con tres secciones principales: **Ranking** , **Agregar Nft** y **Mis Nfts**. Dentro de esta tercera es que se puede visualizar la lista de NFTs ingresados por el propio usuario. Además, esta tiene un diseño web adaptable (responsive).
 
-Con respecto a la interfaz, esta hace uso de <a href="https://material.io/components?platform=web"> Material Design Web Components</a> para crear su estética. Además, para lograr navegar entre secciones hacemos uso de una <a href="https://material.io/components/app-bars-top">top app bar</a>. Esta da la oportunidad de que solo una sección este activa en un momento determinado. Por otro lado, creamos varios <a href="https://material.io/components/buttons#usage">botónes</a>, como por ejemplo de "Agregar" o de "Ver mis Nft". Estos pueden ser encontrados sobre la barra superior de la pagina, otorgandole a los usuarios un fácil acceso a éstos cada vez que este decida agregar un nuevo gasto, de forma simple y dinámica. Cabe destacar que cada seccion cuenta con sus características y funciones particulares: 
+Con respecto a la interfaz, esta hace uso de <a href="https://material.io/components?platform=web"> Material Design Web Components</a> para crear su estética. Además, para lograr navegar entre secciones hacemos uso de una <a href="https://material.io/components/app-bars-top">top app bar</a>. Esta da la oportunidad de que solo una sección este activa en un momento determinado. Por otro lado, creamos varios <a href="https://material.io/components/buttons#usage">botones</a>, como por ejemplo de "Agregar". Estos pueden ser encontrados sobre la barra superior de la pagina, otorgandole a los usuarios un fácil acceso a éstos cada vez que este decida agregar un nuevo nft, de forma simple y dinámica. Cabe destacar que cada sección cuenta con sus características y funciones particulares: 
 
-* **Ranking**  Mantiene una lista actualizada de el Ranking de los 5 Nfts mas visualizados. Para cada Nft se muestran las siguientes características: Contract Adress, Token ID, Token Standard, Blockchain, Creator Fees, Creator Name y precio.  Ademas existe la posibilidad de guardarlos en la wishlist a traves del boton del corazon.
+* **Ranking**  Mantiene una lista actualizada de el Ranking de los 7 Nfts mas visualizados. Para cada Nft se muestran las siguientes características: Contract Adress, Token ID, Token Standard, Blockchain, Creator Fees, Creator Name y precio.  Ademas existe la posibilidad de guardarlos en la wishlist a traves del boton del corazon.
 
-* **Agregar Nft** Esta sección permite publicar nuevas piezas de Nft con la comunidad de CultoCafe. Las personas agregan sus Nft brindando información de nombre, wallet, monto, descripción, categoria y imagen. También, en esta sección se puede visualizar toda la lista de Nfts publicados, junto con sus respectivas características. Esta lista se actualiza cada vez que un Nft es agregado al sistema.
+* **Agregar Nft** Esta sección permite publicar nuevas piezas de Nft en el marketplace de CultoCafe. Las personas agregan sus Nft brindando información de nombre, wallet, monto, descripción, categoria y imagen.
 
+* **Mis Nfts**  En esta sección se puede visualizar toda la lista de Nfts publicados, junto con sus respectivas características. Esta lista se actualiza cada vez que un Nft es agregado al sistema.
 
 ## CODIFICACIÓN
 ### IDE: Visual Studio Code
@@ -204,20 +208,20 @@ Para llevar a cabo la codificación utilizamos: **JavaScript**, **HTML** y **CSS
 
 ### Buenas prácticas para la Programación Orientada a Objetos: 
 
-Nos parecio importante darle en nuestro obligatorio atención especial a la separación de lógica e interfaz, siguiendo las buenas prácticas de la OOP (Programación Orientada a Objetos). Es asī que en interfaz se puede encontrar todo lo que respecta a la lógica utilizada en la interfaz que puede ser vista por el usuario, el archivo .html y el archivo .css. Por otro lado, dentro del dominio aparecen las principales clases que utilizamos acompańadas de sus archivos de prueba. Respectivas pruebas fueron realizadas con Jest. 
+Nos parecio importante darle en nuestro obligatorio atención especial a la separación de lógica e interfaz, siguiendo las buenas prácticas de la OOP (Programación Orientada a Objetos). Es asī que en interfaz se puede encontrar todo lo que respecta a la lógica utilizada en la interfaz que puede ser vista por el usuario, el archivo .html y el archivo .css. Por otro lado, dentro del dominio aparecen las principales clases que utilizamos acompañadas de sus archivos de prueba. Respectivas pruebas fueron realizadas con Jest. 
 
 Cabe destacar que cada carpeta contiene su propio package.json.
 
 ## TEST UNITARIOS
 
-Dentro de nuestro proyecto implementamos tests para cubrir cada elemento de la clase. El beneficio de esto fue probar que su comportamiento coincida con el esperado. A traves de estos logramos obtener la cobertura del dominio.
+Dentro de nuestro proyecto implementamos tests para cubrir cada método de la clase. El beneficio de esto fue probar que su comportamiento coincida con el esperado. A traves de estos logramos obtener la cobertura del dominio.
 
 <img src="./PruebasUnitarias.png" alt="Pruebas Unitarias - Jest" /> 
 
 ## TEST DE SISTEMA
 
 ### Sobre la versión congelada 
-Debido al sistema operativo del que disponiamos cada una de las integrantes del grupo, el test del sistema fue realizado en Windows y Mac. Además se testeo tanto en Edge como en Chrome. Por suerte, todos los test obtuvieron el resultado esperado. Para ambos sistemas operativos las funcionalidades corrían de manera correcta y la visualización era de tipo responsive.
+Debido al sistema operativo del que disponiamos cada una de las integrantes del grupo, el test del sistema fue realizado en Windows y Mac. Además se testeó tanto en Edge como en Chrome. Por suerte, todos los test obtuvieron el resultado esperado. Para ambos sistemas operativos las funcionalidades corrían de manera correcta y la visualización era de tipo responsive.
 
 ### Aplicación de la técnica partición equivalente a traves de los casos de prueba
 
@@ -225,7 +229,7 @@ Realizamos los siguientes casos de pruebas de la funcionalidad **"Agregar Nft"**
 
 | Entrada / Variable | Clases Validas                          | Clases Invalidas                       | 
 |--------------------|-----------------------------------------|----------------------------------------|
-| Monto              |Caracteres numéricos positivos o cero(1) | Caracteres numéricos negativos(2)      |
+| Monto              |Caracteres numéricos positivos o cero con decimales(1) | Caracteres numéricos negativos(2)      |
   
 <img src="./particiónEquivalente.png" alt="Partición equivalente" /> 
 
@@ -236,7 +240,7 @@ Realizamos los siguientes casos de pruebas de la funcionalidad **"Agregar Nft"**
 * **Aplicación bajo prueba:** CultoCafe 
 * **Duración:** 15 min (Corta)
 * **Entorno:** Google Chrome Versión 102.0.5005.61 
-* **Objetivo:** Chequear el funcionamiento correcto de agregar un gasto
+* **Objetivo:** Chequear el funcionamiento correcto de agregar un Nft
 
 * **Notas de las pruebas:**
 
@@ -244,7 +248,7 @@ Realizamos los siguientes casos de pruebas de la funcionalidad **"Agregar Nft"**
 
 **2)** La interfaz no prohibe agregar montos iguales a 0. Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
 
-**3)** Si el usuario no relleno el campo de nombre, la interfaz permite agregar la pieza de Nft. Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
+**3)** Si el usuario no rellenó el campo de nombre, la interfaz permite agregar la pieza de Nft. Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
 
 **4)**El programa agrega el valor de monto literal. Por ejemplo si el usuario ingresa "00273" o "000", se agregaría la pieza de Nft con el respectivo montos en lugar de "273" o "0". Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
 
@@ -285,38 +289,36 @@ Realizamos los siguientes casos de pruebas de la funcionalidad **"Agregar Nft"**
 <u>Configuración de las pruebas: 0%</u> 
 
 ## REPORTE DE ISSUES
-A la hora de mejorar la calidad de nuestro proyecto reportamos issues. Estos representan bugs, improvements y missing features. Pueden ser visualizados en el tab de issues de GitHub y los dejamos abiertos ya sea para correcciones o posibles mejoras que pueden llegar a hacerse en el futuro. Además hubo otros que issues que encontramos antes de realizar el **code freeze**. Por suerte estos los llegamos a solucionar y por lo tanto cerrar en GitHub. El reporte de issues tenía como objetivo que todos los integrantes del equipo estuvieran al tanto del issue y alguno pueda adjudicarselo para tratar de solucionarlo. No fueron reportados todos los errores que encontramos durante el desarrollo ya que algunos de los mismos fueron solucionados de manera inmediata.
+A la hora de mejorar la calidad de nuestro proyecto reportamos issues. Estos representan bugs, improvements y missing features. Pueden ser visualizados en el tab de issues de GitHub y algunos los dejamos abiertos ya sea para correcciones o posibles mejoras que pueden llegar a hacerse en el futuro. Además hubo otros issues que encontramos antes de realizar el **code freeze**. Por suerte estos los llegamos a solucionar y por lo tanto cerrar en GitHub. El reporte de issues tenía como objetivo que todos los integrantes del equipo estuvieran al tanto del issue y alguno pueda adjudicarselo para tratar de solucionarlo. No fueron reportados todos los errores que encontramos durante el desarrollo ya que algunos de los mismos fueron solucionados de manera inmediata en el código. 
 
 Los issues que reportamos fueron:
 
-* <a href="https://github.com/paulalebed/Lebed--Melnik/issues/1#issue-1266278414"> El dominio debe tener un 100% de cobertura que es obtenido mediante las pruebas unitarias con Jest. En este caso, no estaba correctamente definido el "sistema" y hacíamos referencia al mismo, lo que evacuaba en un error. </a>
-* <a href="https://github.com/paulalebed/Lebed--Melnik/issues/2#issue-1268645840"> El programa agrega el valor de monto literal. Por ejemplo si el usuario ingresa "00328", se agregaría la pieza de Nft con el respectivo montos en lugar de "328". </a>
+* <a href="https://github.com/paulalebed/Lebed--Melnik/issues/1#issue-1266278414"> El dominio debe tener un 100% de cobertura que es obtenido mediante las pruebas unitarias con Jest. En este caso, no estaba correctamente definido el "sistema" y no hacíamos referencia al mismo, lo que evacuaba en un error. </a>
+* <a href="https://github.com/paulalebed/Lebed--Melnik/issues/2#issue-1268645840"> El programa agrega el valor de monto literal. Por ejemplo si el usuario ingresa "00328", se agregaría la pieza de Nft con el respectivo monto en lugar de "328". Aclaración: este bug fue reportado y posteriormente decidimos que dado que las criptomonedas tienen valores volátiles y en algunos casos una unidad puede representar cientos de miles de dólares, está correcto que se permita ingresar 001 por ejemplo, dado que podría representar un valor real.</a>
 
 
 ### Evaluación global de calidad
 
 Utilizamos <a href="https://eslint.org/">Eslint</a> de Google para evaluar nuestro proyecto a nivel de buenas prácticas, rendimiento y accesibilidad. 
 
-## REFLEXIÓNES PERSONALES
+## REFLEXIONES PERSONALES
 
 ### Paula Lebed
-En esta instancia del obligatorio pude darme cuenta la relevancia de las herramientas adquiridas a lo largo del curso. Esto va desde el correcto 
-uso de GitHub, hasta las diferentes maneras que existen de testear y lograr detectar errores. Creo que junto a mi compañera hemos podido llegar a
-un excelente resultado. Esto se debe, en mi opinion, a el buen manejo que creo que tuvimos a lo largo de ambas entregas pero también gracias a saber implementar lo adquirido en clase.
+En esta instancia del obligatorio pude darme cuenta la relevancia de las herramientas adquiridas a lo largo del curso. Esto va desde el correcto uso de GitHub, hasta las diferentes maneras que existen de testear y lograr detectar errores. Creo que junto a mi compañera hemos podido llegar a un excelente resultado. Esto se debe, en mi opinion, a el buen manejo que creo que tuvimos a lo largo de ambas entregas pero también gracias a saber implementar lo adquirido en clase.
 
 ### Tamara Melnik
-Creo que la segunda parte del proyecto el trabajo fue más fluido y dinámico que en la primera. Esto debido talvez a que ya estabamos en algún punto familiarizadas con las metodologías y herramientas, que la primer parte necesitamos incorporar. Con esto me refiero a el manejo de Git, tambien el IDE Visual Studio Code. Pude ver las ventajas que ambos de estos proveen. Por otro lado, supimos dividir el trabajo de forma equitativa y bastante rápida junto a mi compañera Paula. Me quedo satisfecha con el trabajo realizado y agradecida con mi compañera por el esfuerzo grupal que le dimos.
+Creo que la segunda parte del proyecto el trabajo fue más fluido y dinámico que en la primera. Esto debido tal vez a que ya estabamos en algún punto familiarizadas con las metodologías y herramientas que en la primer parte necesitamos incorporar. Con esto me refiero al manejo de Git, tambien el IDE Visual Studio Code. Pude ver las ventajas que ambos de estos proveen. Por otro lado, supimos dividir el trabajo de forma equitativa y bastante rápida junto a mi compañera Paula. Me quedo satisfecha con el trabajo realizado y agradecida con mi compañera por el esfuerzo grupal que le dimos.
 
 ### Técnicas aplicadas y aprendizajes
-En esta parte del obligatorio logramos profundizar realmente en lo que es llevar a cabo un proyecto real. Nos gusto poder ver parte de lo que realizamos en la instancia del obligatorio anterior, tomando una funcionalidad del mismo. Para llevarlo a cabo tuvimos que retomar y adentrarnos en el aprendizaje recibido en la materia de programción 1, expandiendo nuestros conocimientos en lo que respecta a HTML, JavaScript y jcss.  Fue necesario el uso de frameworks para asi generar una pagina que sea funcional. 
+En esta parte del obligatorio logramos profundizar realmente en lo que es llevar a cabo un proyecto real. Nos gusto poder ver parte de lo que realizamos en la instancia del obligatorio anterior, tomando una funcionalidad del mismo y pudiendo materializar realmente los requerimientos. Para llevarlo a cabo tuvimos que retomar y adentrarnos en el aprendizaje recibido en la materia de programación 1, expandiendo nuestros conocimientos en lo que respecta a HTML, JavaScript y css.  Fue necesario el uso de frameworks para asi generar una página que sea funcional. 
 
-Además, aprendimos sobre otras herramientas nuevas como por ejemplo pruebas unitarias. Estas nos fueron de gran utlidad a la hora de detectar busgs en las instancias más tempranas de codificacion. También utilizamos otras tecnicas de pruebas: pruebas exploratorias y reporte de issues. Cabe destacar que seguimos desarrollando nuestro avance en GitHub, generando esta vez que formpe parte de las practicas habituales em el momento de codificar.
+Además, aprendimos sobre otras herramientas nuevas como por ejemplo pruebas unitarias. Estas nos fueron de gran utlidad a la hora de detectar bugs en las instancias más tempranas de codificación. También utilizamos otras técnicas de pruebas: pruebas exploratorias y reporte de issues. Cabe destacar que seguimos desarrollando nuestro avance en GitHub, generando esta vez que forme parte de las practicas habituales em el momento de codificar.
 
 ## PRESENTACIÓNES ORALES INDIVIDUALES
 
-**Paula Lebed** presento el tema **especificacion de use cases**y se puede acceder a el PDF con la presentación en nuestro repo.
+**Paula Lebed** presentó el tema **especificacion de use cases** y se puede acceder a el PDF con la presentación en nuestro repo.
  <a href="./Especificacion_use_cases.pdf">link</a>.
-**Tamara Melnik** presento el **pruebas unitarias** y se puede acceder a el PDF con la presentación en nuestro repo.
+**Tamara Melnik** presentó el **pruebas unitarias** y se puede acceder a el PDF con la presentación en nuestro repo.
  <a href="./JEST.pdf">link</a>.
 
 </div>

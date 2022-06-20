@@ -3,22 +3,22 @@ import { MDCTopAppBar } from '@material/top-app-bar';
 import { MDCTabBar } from '@material/tab-bar';
 import { MDCTextField } from '@material/textfield';
 import { MDCSelect } from '@material/select';
-import {MDCSnackbar} from '@material/snackbar';
-import {MDCList} from '@material/list';
+import { MDCSnackbar } from '@material/snackbar';
+import { MDCList } from '@material/list';
 import Nft from '../../dominio/nft.mjs';
 import Sistema from '../../dominio/sistema.js';
 
 const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
 iconButtonRipple.unbounded = true;
 
-import {MDCIconButtonToggle} from '@material/icon-button';
+import { MDCIconButtonToggle } from '@material/icon-button';
 const iconToggle = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button0'));
 const _iconToggle = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button1'));
 const iconToggle2 = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button2'));
 const iconToggle3 = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button3'));
 const iconToggle4 = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button4'));
 
-const sistema = new Sistema(); 
+const sistema = new Sistema();
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = new MDCTopAppBar(topAppBarElement);
@@ -42,19 +42,58 @@ const selectGenre = new MDCSelect(document.querySelector('.mdc-select'));
 const selectCategory = new MDCSelect(document.getElementById('category'));
 const textfieldImage = new MDCTextField(document.getElementById('image'));
 
+function agregarNft(titulo, imagen, precio, desc) {
+ 
+ 
+  const div1 = document.createElement("div");
+  div1.className = "my-card";
+ 
+  const div2 = document.createElement("div");
+  div2.className = "mdc-card__primary-action demo-card__primary-action backgroundCard";
+ 
+  const div3 = document.createElement("div");
+  div3.className = "mdc-card__media mdc-card__media--16-9 demo-card__media";
+  div3.style = `background-image: url(${imagen});`;
+ 
+  const div4 = document.createElement("div");
+  div4.className = "demo-card__primary";
+ 
+  const h2 = document.createElement("h2");
+  h2.className = "demo-card__title mdc-typography mdc-typography--headline6";
+  h2.textContent = `${titulo}`
+ 
+  const h3 = document.createElement("h3");
+  h3.className = "demo-card__subtitle mdc-typography mdc-typography--subtitle2"
+  h3.textContent = `${precio} ETH`
+  const container = document.getElementById("card-lists");
+
+  const spn = document.createElement("span");
+  spn.textContent = `${desc}`
+
+ 
+  container.appendChild(div1);
+  div1.appendChild(div2);
+  div2.appendChild(div3);
+  div2.appendChild(div4);
+  div4.appendChild(h2);
+  div4.appendChild(h3);
+  div4.appendChild(spn);
+ 
+}
+
+
 const addButton = new MDCRipple(document.getElementById('addButton'));
 addButton.listen('click', () => {
   let title = textFieldTitle.value;
-  let year = textFieldYear.value;
-  let genre = selectGenre.value;
-  let description = textFieldDescription.value; 
-  let category = selectCategory.value; 
-  let image = textfieldImage.value; 
+  let price = textFieldYear.value;
+  let wallet = selectGenre.value;
+  let description = textFieldDescription.value;
+  let category = selectCategory.value;
+  let image = textfieldImage.value;
 
   try {
-    let newNft = new Nft(title, genre, year, description, category,image);
+    let newNft = new Nft(title, wallet, price, description, category, image);
     sistema.agregar(newNft);
-    actualizarPagadoPor();
   } catch (error) {
     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
     snackbar.labelText = error.message;
@@ -62,57 +101,10 @@ addButton.listen('click', () => {
   } finally {
     let nfts = sistema.getNfts();
     console.log(nfts);
-    let form = document.getElementById('form'); 
-    form.reset(); 
-    actualizarPagadoPor();
+    agregarNft(title, image, price, description);
+    let form = document.getElementById('form');
+    form.reset();
+
 
   }
 })
-
-const listaNftsAgregados = document.getElementById("misNFT");
-function actualizarPagadoPor() {
-  listaNftsAgregados.innerHTML = "";
-  for (let x of sistema.listaNft) {
-    let nodo = document.createElement("li");
-    nodo.className = "mdc-list-item";
-    nodo.setAttribute("data-value", x.nombre);
-    let rip = document.createElement("span");
-    rip.className = "mdc-list-item__ripple";
-    let text = document.createElement("span");
-    text.className = "mdc-list-item__text";
-    let str = x.toString();
-    let txtNombreNFT = document.createTextNode(str);
-    text.appendChild(txtNombreNFT);
-    nodo.appendChild(rip);
-    nodo.appendChild(text);
-    listaNftsAgregados.appendChild(nodo);
-  }
-};
-
-//const showButton = new MDCRipple(document.getElementById('showButton'));
-/*addButton.listen('click', () => {
-    let nfts = listaNfts.getNfts();
-    console.log(nfts);
-      let lista = document.getElementById("idLista");
-      if(nfts.length == 1){
-      document.getElementById("lista").innerHTML="Mis nft: "+nfts[0].value; 
-      lista.innerHTML="";
-      } else if (nfts.length > 1){
-      document.getElementById("lista").innerHTML="Mis nft:"; 
-      lista.innerHTML="";
-      for (i=0;i<nfts.length;i++) {
-      let itemList = document.createElement("li");
-      let nodoT = document.createTextNode(nfts[i].value); 
-      itemList.appendChild(nodoT); 
-      lista.appendChild(itemList);
-      }
-  
-}
-})*/
-
-/*import {MDCRipple} from '@material/ripple';
-
-const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
-const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
-  return new MDCRipple(el);
-});*/
