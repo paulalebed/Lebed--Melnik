@@ -230,7 +230,7 @@ Realizamos los siguientes casos de pruebas de la funcionalidad **"Agregar Nft"**
 | Entrada / Variable | Clases Validas                                        | Clases Invalidas                               | 
 |--------------------|-------------------------------------------------------|------------------------------------------------|
 | Monto              |Caracteres numéricos positivos o cero con decimales(1) | Caracteres numéricos negativos(2)              |
-| Nombre             |No repetidos(3)                                        | Repetidos(4)                                   |
+| Nombre             |Nombre no registrado (3)                               | Nombre ya registrado (4)                       |
   
 <img src="./particiónEquivalente.png" alt="Partición equivalente" /> 
 
