@@ -9,8 +9,10 @@
 | Integrantes    | Paula Lebed y Tamara Melnik                            |
 | Link           | https://github.com/paulalebed/Lebed--Melnik.git        |
 
-##INDICE
+## INDICE
+
 CONSTRUCION
+
 **1.** Aspectos generales
 
 **2.** Funciones principales implementadas: casos de uso 
