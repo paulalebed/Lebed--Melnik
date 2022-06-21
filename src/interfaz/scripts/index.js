@@ -3,15 +3,16 @@ import { MDCTopAppBar } from '@material/top-app-bar';
 import { MDCTabBar } from '@material/tab-bar';
 import { MDCTextField } from '@material/textfield';
 import { MDCSelect } from '@material/select';
+import { MDCIconButtonToggle } from '@material/icon-button';
 import { MDCSnackbar } from '@material/snackbar';
-import { MDCList } from '@material/list';
 import Nft from '../../dominio/nft.mjs';
 import Sistema from '../../dominio/sistema.js';
 
+
+//Lógica de botones para favear cards en el Ranking
 const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
 iconButtonRipple.unbounded = true;
 
-import { MDCIconButtonToggle } from '@material/icon-button';
 const iconToggle = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button0'));
 const _iconToggle = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button1'));
 const iconToggle2 = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button2'));
@@ -20,9 +21,6 @@ const iconToggle4 = new MDCIconButtonToggle(document.querySelector('.mdc-icon-bu
 
 const sistema = new Sistema();
 
-const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-const topAppBar = new MDCTopAppBar(topAppBarElement);
-const list = new MDCList(document.querySelector('.mdc-list'));
 
 const tabBar = new MDCTabBar(document.querySelector(".mdc-tab-bar"));
 tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
@@ -35,19 +33,20 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
   });
 });
 
-const textFieldTitle = new MDCTextField(document.getElementById('title'));
+
+//Declaración de los campos del formulario 
+const textFieldTitle = new MDCTextField(document.getElementById('title')); 
 const textFieldYear = new MDCTextField(document.getElementById('year'));
 const textFieldDescription = new MDCTextField(document.getElementById('description'));
 const selectGenre = new MDCSelect(document.querySelector('.mdc-select'));
 const selectCategory = new MDCSelect(document.getElementById('category'));
 const textfieldImage = new MDCTextField(document.getElementById('image'));
 
+//Función que agrega los nfts como cards de manera dinámica
 function agregarNft(titulo, imagen, precio, desc) {
- 
- 
   const div1 = document.createElement("div");
   div1.className = "my-card";
- 
+
   const div2 = document.createElement("div");
   div2.className = "mdc-card__primary-action demo-card__primary-action backgroundCard";
  
@@ -70,7 +69,6 @@ function agregarNft(titulo, imagen, precio, desc) {
   const spn = document.createElement("span");
   spn.textContent = `${desc}`
 
- 
   container.appendChild(div1);
   div1.appendChild(div2);
   div2.appendChild(div3);
@@ -81,9 +79,10 @@ function agregarNft(titulo, imagen, precio, desc) {
  
 }
 
-
+//Lógica del botón "agregar" NFT 
 const addButton = new MDCRipple(document.getElementById('addButton'));
 addButton.listen('click', () => {
+
   let title = textFieldTitle.value;
   let price = textFieldYear.value;
   let wallet = selectGenre.value;
@@ -92,16 +91,21 @@ addButton.listen('click', () => {
   let image = textfieldImage.value;
 
   try {
+
     let newNft = new Nft(title, wallet, price, description, category, image);
+    agregarNft(title, image, price, description);
     sistema.agregar(newNft);
+
   } catch (error) {
+
     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
     snackbar.labelText = error.message;
     snackbar.open();
+
   } finally {
+
     let nfts = sistema.getNfts();
     console.log(nfts);
-    agregarNft(title, image, price, description);
     let form = document.getElementById('form');
     form.reset();
 

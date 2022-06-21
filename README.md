@@ -19,23 +19,34 @@ CONSTRUCION
 
 
 INTERFAZ DE USUARIO
+
 **1.** Usabilidad
+
 **2.** Estándar de accesibilidad WCAG
+
 **3.** Especificación de estilo
+
 **4.** Caracterísicas generales
 
 CODIFICACIÓN
+
 **1.** IDE: Visual Studio Code
-**2.** Buenas prácticas para la Programación Orientada a Objetos
+
+**2.** Buenas prácticas para la Programación Orientada a Objetos 
 
 TEST UNITARIOS
 
 TEST DE SISTEMA
+
 **1.** Sobre la versión congelada 
+
 **2.** Aplicación de la técnica partición equivalente a traves de los casos de prueba
+
 **3.** Pruebas exploratorias
 
+
 REPORTE DE ISSUES
+
 **1.** Evaluación global de calidad
 
 REFLEXIÓNES PERSONALES
@@ -251,11 +262,11 @@ Realizamos los siguientes casos de pruebas de la funcionalidad **"Agregar Nft"**
 
 **3)** Si el usuario no rellenó el campo de nombre, la interfaz permite agregar la pieza de Nft. Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
 
-**4)**El programa agrega el valor de monto literal. Por ejemplo si el usuario ingresa "00273" o "000", se agregaría la pieza de Nft con el respectivo montos en lugar de "273" o "0". Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
+**4)** El programa agrega el valor de monto literal. Por ejemplo si el usuario ingresa "00273" o "000", se agregaría la pieza de Nft con el respectivo montos en lugar de "273" o "0". Se debería lanzar un error (snackbar), el cual aclare que esta acción no se puede realizar.
 
-**6)** Si se ingresa dentro del campo de texto un String muy largo o dentro del nombre una cifra extensa, aparece de manera cortado en la lista de Nfts agregados. 
+**5)** Si se ingresa dentro del campo de texto un String muy largo o dentro del nombre una cifra extensa, aparece de manera cortado en la lista de Nfts agregados. 
 
-**7)** Sería conveniente que los campos de texto tengan de fondo un color que sea sutil, para poder distinguirlos facilmente de la ventana.
+**6)** Sería conveniente que los campos de texto tengan de fondo un color que sea sutil, para poder distinguirlos facilmente de la ventana.
 
 * **Estructura de división:** 
 
