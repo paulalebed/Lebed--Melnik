@@ -318,14 +318,10 @@ Además, aprendimos sobre otras herramientas nuevas como por ejemplo pruebas uni
 ## PRESENTACIÓNES ORALES INDIVIDUALES
 
 **Paula Lebed** presentó el tema **especificacion de use cases** y se puede acceder a el PDF con la presentación en nuestro repo.
- <a href="./Especificacion_use_cases.pdf">link</a>.
+ <a href="./Especificacion_use_cases.pdf">link</a>. Se trató de como una vez que se tiene un modelo con los casos de uso en cierto nivel de abstracción, aceptado tanto por los stakeholders como por los usuarios, es necesario para comenzar el desarrollo que se empiezen a especificar los casos de uso. Esta es, la descripción detallada textual (paso a paso) de cómo el usuario realizará la interacción con el sistema para un caso de uso en particular y tiene un formato específico, el cual fue presentado. 
+
+
 **Tamara Melnik** presentó el **pruebas unitarias** y se puede acceder a el PDF con la presentación en nuestro repo.
- <a href="./JEST.pdf">link</a>.
+ <a href="./JEST.pdf">link</a>. La presentación que realicé sobre JEST me permitió entender la relevancia de las pruebas unitarias en el desarrollo de código en los ambientes pre productivos principalmente. Estas pruebas son realizadas de manera individual e independiente en todos los componentes del código (métodos) para asegurar la calidad del mismo y permite encontrar errores tempranos. Las pruebas unitarias son una buena práctica de codificación y existen distintos frameworks para realizarlas según el lenguaje de programación utilizado.
 
 </div>
-
-
-
-
-
-
